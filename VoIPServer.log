@@ -1,0 +1,28 @@
+2025-07-18 16:54:42,665 - INFO - Server listening on 127.0.0.1:8080...
+2025-07-18 16:56:31,578 - INFO - {'type': 'connect', 'payload': {'id': '185bd454-6d73-4990-b75b-d4aa87a95e4f', 'username': 'no username'}}
+2025-07-18 16:56:31,579 - INFO - Connection from ('127.0.0.1', 56580)
+2025-07-18 16:56:31,579 - INFO - Connection successful for client 185bd454-6d73-4990-b75b-d4aa87a95e4f
+2025-07-18 17:03:08,330 - INFO - Server stopped.
+2025-07-18 17:03:08,330 - ERROR - An error occurred: [WinError 10038] An operation was attempted on something that is not a socket
+2025-07-18 17:03:14,386 - INFO - Server listening on 127.0.0.1:8080...
+2025-07-18 17:03:14,386 - INFO - Server listening on 127.0.0.1:8080...
+2025-07-18 17:03:25,306 - INFO - {'type': 'connect', 'payload': {'id': '185bd454-6d73-4990-b75b-d4aa87a95e4f', 'username': 'no username'}}
+2025-07-18 17:03:25,306 - INFO - {'type': 'connect', 'payload': {'id': '185bd454-6d73-4990-b75b-d4aa87a95e4f', 'username': 'no username'}}
+2025-07-18 17:03:25,306 - INFO - Connection from ('127.0.0.1', 56670)
+2025-07-18 17:03:25,306 - INFO - Connection from ('127.0.0.1', 56670)
+2025-07-18 17:03:25,307 - INFO - Connection successful for client 185bd454-6d73-4990-b75b-d4aa87a95e4f
+2025-07-18 17:03:25,307 - INFO - Connection successful for client 185bd454-6d73-4990-b75b-d4aa87a95e4f
+2025-07-18 17:05:11,844 - INFO - Server stopped.
+2025-07-18 17:05:11,844 - INFO - Server stopped.
+2025-07-18 17:05:11,845 - ERROR - An error occurred: [WinError 10038] An operation was attempted on something that is not a socket
+2025-07-18 17:05:11,845 - ERROR - An error occurred: [WinError 10038] An operation was attempted on something that is not a socket
+2025-07-18 17:05:19,325 - INFO - Server listening on 127.0.0.1:8080...
+2025-07-18 17:05:25,144 - INFO - {'type': 'connect', 'payload': {'id': '185bd454-6d73-4990-b75b-d4aa87a95e4f', 'username': 'no username'}}
+2025-07-18 17:05:25,145 - INFO - Connection from ('127.0.0.1', 56696)
+2025-07-18 17:05:25,145 - INFO - Connection successful for client 185bd454-6d73-4990-b75b-d4aa87a95e4f
+2025-07-18 17:08:48,915 - INFO - Server listening on 127.0.0.1:8080...
+2025-07-18 17:10:40,315 - INFO - {'type': 'connect', 'payload': {'id': '185bd454-6d73-4990-b75b-d4aa87a95e4f', 'username': 'no username'}}
+2025-07-18 17:10:40,315 - INFO - Connection from ('127.0.0.1', 56805)
+2025-07-18 17:10:40,316 - INFO - Connection successful for client 185bd454-6d73-4990-b75b-d4aa87a95e4f
+2025-07-18 17:11:11,065 - INFO - Server stopped.
+2025-07-18 17:11:11,066 - ERROR - An error occurred: [WinError 10038] An operation was attempted on something that is not a socket
