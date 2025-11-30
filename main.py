@@ -1,21 +1,23 @@
 import json
 import cmd2
-from server.server import VoIPServer
-from threading import Thread
-
+from voip.server import server
 
 class VoIPServerCLI(cmd2.Cmd):
-    def __init__(self, port=8080, host="localhost"):
+    def __init__(self, host: str, port: int):
         super().__init__()
         self.intro = "Welcome to the VoIP Server CLI. Type help or ? to list commands."
         self.prompt = "(VoIPServerCLI) "
         self.port = port
         self.host = host
-        self.server = VoIPServer(self.port, self.host)
+        self.server = server.VoIPServer(host, port)
+
+    def do_describe(self, arg):
+        """Get infos on the VoIP server. Usage: describe"""
+        self.poutput(self.server.describe())
 
     def do_start(self, arg):
         """Start the VoIP server. Usage: start"""
-        if self.server and self.server.is_alive():
+        if self.server.running:
             self.poutput("Server is already running.")
         else:
             self.poutput("Starting VoIP server...")
@@ -23,13 +25,12 @@ class VoIPServerCLI(cmd2.Cmd):
 
     def do_stop(self, arg):
         """Stop the VoIP server. Usage: stop"""
-        if self.server and self.server.is_alive():
-            self.poutput("Stopping VoIP server...")
-            self.server.stop()
-            self.poutput("Server stopped.")
-            self.server = VoIPServer(self.port, self.host)
-        else:
+        if not self.server.running:
             self.poutput("Server is not running.")
+            return
+        self.poutput("Stopping VoIP server...")
+        self.server.stop()
+        self.poutput("Server stopped.")
 
     def do_status(self, arg):
         """Check if the VoIP server is running."""
@@ -56,6 +57,13 @@ class VoIPServerCLI(cmd2.Cmd):
         else:
             self.poutput("No clients connected.")
 
+    def do_status(self, arg):
+        """Check server status. Usage: status"""
+        if self.server.running:
+            self.poutput("Server is running.")
+        else:
+            self.poutput("Server is stopped.")
+
     def do_clear(self, arg):
         """Clear the console. Usage: clear"""
         self.poutput("\033c")
@@ -66,8 +74,15 @@ class VoIPServerCLI(cmd2.Cmd):
         return True
 
 if __name__ == '__main__':
-    with open('server/settings.json', 'r') as f:
+    port = None
+    host = None
+    with open('voip/server/settings.json', 'r') as f:
         settings = json.load(f)
+        port=settings["server"]["port"]
+        host=settings["server"]["host"]
 
-    app = VoIPServerCLI(port=settings["server"]["port"], host=settings["server"]["host"])
+    if not (port and host):
+        port, host = "localhost", 8080
+
+    app = VoIPServerCLI(host, port)
     app.cmdloop()

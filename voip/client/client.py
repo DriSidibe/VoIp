@@ -20,6 +20,10 @@ class VoIPClientCLI(cmd2.Cmd):
         self.client.disconnect()
         self.client = VoIPClient(self.id, self.host, self.port)
 
+    def do_status(self, arg):
+        """Check client status on the server. Usage: status"""
+        self.client.status()
+
     def do_clear(self, arg):
         """Clear the console. Usage: clear"""
         self.poutput("\033c")
