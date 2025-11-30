@@ -1,5 +1,6 @@
 from api import VoIPClient
 import cmd2
+import sys
 
 class VoIPClientCLI(cmd2.Cmd):
     def __init__(self, id, host='127.0.0.1', port=8080):
@@ -24,6 +25,10 @@ class VoIPClientCLI(cmd2.Cmd):
         """Check client status on the server. Usage: status"""
         self.client.status()
 
+    def do_friends_list(self, arg):
+        """Check all available friends on the server. Usage: friends_list"""
+        self.client.friends_list()
+
     def do_clear(self, arg):
         """Clear the console. Usage: clear"""
         self.poutput("\033c")
@@ -35,5 +40,8 @@ class VoIPClientCLI(cmd2.Cmd):
         return True
 
 if __name__ == '__main__':
-    app = VoIPClientCLI(id="185bd454-6d73-4990-b75b-d4aa87a95e4f", host="127.0.0.1", port=8080)
+    if len(sys.argv) != 2:
+        print("Usage: python main.py <client_id>")
+        sys.exit(1)
+    app = VoIPClientCLI(id=sys.argv[1], host="127.0.0.1", port=8080)
     app.cmdloop()

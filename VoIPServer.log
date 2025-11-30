@@ -17,3 +17,75 @@
 2025-11-30 21:21:36,468 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
 2025-11-30 21:21:49,772 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
 2025-11-30 21:21:49,773 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-11-30 21:52:10,420 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 21:52:13,312 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-11-30 21:52:13,313 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-11-30 22:00:45,146 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:02:53,511 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:02:55,301 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-11-30 22:02:55,301 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-11-30 22:03:03,206 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-11-30 22:03:03,207 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-11-30 22:03:22,884 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-11-30 22:03:22,884 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-11-30 22:03:45,771 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-11-30 22:03:45,772 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-11-30 22:07:37,371 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:07:38,949 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-11-30 22:09:36,161 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:09:38,728 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-11-30 22:09:38,729 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-11-30 22:12:01,389 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:12:03,914 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-11-30 22:12:03,914 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-11-30 22:13:16,659 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:13:19,195 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-11-30 22:13:19,195 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-11-30 22:13:24,804 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-11-30 22:13:24,804 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-11-30 22:15:03,809 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:15:07,178 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4 is trying to connect.
+2025-11-30 22:15:35,603 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:18:49,200 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:18:52,173 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4 is trying to connect.
+2025-11-30 22:19:31,455 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:19:35,093 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4 is trying to connect.
+2025-11-30 22:20:42,845 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:20:47,580 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4 is trying to connect.
+2025-11-30 22:20:55,888 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4 is trying to connect.
+2025-11-30 22:25:21,470 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:25:23,941 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-11-30 22:25:23,941 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-11-30 22:28:43,720 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:28:48,156 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-11-30 22:28:48,156 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-11-30 22:31:34,515 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:31:37,642 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-11-30 22:31:37,642 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-11-30 22:32:44,885 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-11-30 22:32:44,886 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-11-30 22:32:50,570 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-11-30 22:32:50,571 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-11-30 22:33:44,144 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-11-30 22:33:44,144 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-11-30 22:33:54,225 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-11-30 22:33:54,225 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-11-30 22:34:03,141 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-11-30 22:34:03,141 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-11-30 22:34:14,834 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-11-30 22:34:14,834 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-11-30 22:34:19,906 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-11-30 22:34:19,906 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-11-30 22:34:24,336 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-11-30 22:34:24,336 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-11-30 22:34:29,278 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-11-30 22:34:29,278 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-11-30 22:35:06,234 - INFO - Server listening on 127.0.0.1:8080...
+2025-11-30 22:35:12,098 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-11-30 22:35:12,099 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-11-30 22:35:17,799 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-11-30 22:35:17,800 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-11-30 22:36:26,849 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-11-30 22:36:26,849 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-11-30 22:36:32,445 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-11-30 22:36:32,446 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.

@@ -6,5 +6,6 @@ REQUEST_CODES = {
     "CLOSE": 600,
     "PING": 700,
     "CONNECT": 800,
-    "DISCONNECT": 900
+    "DISCONNECT": 900,
+    "FRIENDS_LIST": 1000
 }

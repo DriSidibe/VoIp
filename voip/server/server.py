@@ -1,6 +1,5 @@
 import socket
 import logging
-import datetime
 import json
 import threading
 
@@ -48,8 +47,9 @@ class VoIPServer(socket.socket):
             if(data.get("code") == REQUEST_CODES["CONNECT"]):
                 response = self.connect(data['payload']['id'], client_socket)
                 client_socket.send(json.dumps(response).encode('utf-8'))
-                t = threading.Thread(target=self._listen_client, daemon=True, args=[client_socket,])
-                t.start()
+                if response.get("code") == REQUEST_CODES["OK"]:
+                    t = threading.Thread(target=self._listen_client, daemon=True, args=[client_socket,])
+                    t.start()
 
         #self.logger.info(f"Server stopped at {datetime.datetime.now}")
 
@@ -70,6 +70,11 @@ class VoIPServer(socket.socket):
                     break
                 else:
                     client_socket.send(json.dumps(response).encode('utf-8'))
+            if(data.get("code") == REQUEST_CODES["FRIENDS_LIST"]):
+                friends = [client['username'] for client in self.available_clients if client.get('id') != data['payload'].get('id')]
+                if not friends:
+                    friends = []
+                client_socket.send(json.dumps({"code": REQUEST_CODES["OK"], "payload": friends}).encode('utf-8'))
 
     def describe(self):
         return f"VoIpServer -- {self} --"
@@ -89,25 +94,26 @@ class VoIPServer(socket.socket):
         return any(client['id'] == id for client in self.available_clients)
 
     def can_connect(self, id):
-        with open('voip/server/clients.json', 'r') as f:
-            file_content = json.load(f)
-        clients = file_content.get("clients", [])
-        if id in [client['id'] for client in clients]:
+        if id in [client['id'] for client in self.clients]:
             return True
         return False
     
     def connect(self, id, client_socket: socket.socket):
         self.logger.info(f"Client {id} is trying to connect.")
-        if self.is_client_available(id):
+        if self.can_connect(id):
             for client in self.available_clients:
                 if client['id'] == id:
                     self.logger.info(f"Client {id} is already connected.")
                     return {"code": REQUEST_CODES["OK"], "payload": f"You are already connected."}
+            username = [client['username'] for client in self.clients if client['id'] == id]
+            if username:
+                username = username[0]
+            else:
+                username = "Unknown"
+            self.available_clients.append({"id": id, "username": username, "socket": client_socket})
+            self.logger.info(f"Client {id} connected.")
+            return {"code": REQUEST_CODES["OK"], "payload": username}
         else:
-            if self.can_connect(id):
-                self.available_clients.append({"id": id, "socket": client_socket})
-                self.logger.info(f"Client {id} connected.")
-                return {"code": REQUEST_CODES["OK"], "payload": f"Welcome back, {id}!"}
             return {"code": REQUEST_CODES["BAD_REQUEST"], "payload": f"Client {id} is not allowed"}
         
     def disconnect(self, id, client_socket: socket.socket):

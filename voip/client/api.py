@@ -9,8 +9,17 @@ REQUEST_CODES = {
     "CLOSE": 600,
     "PING": 700,
     "CONNECT": 800,
-    "DISCONNECT": 900
+    "DISCONNECT": 900,
+    "FRIENDS_LIST": 1000
 }
+
+def print_friends(friends):
+    if friends:
+        print("Available friends on the server:")
+        for friend in friends:
+            print(f"- {friend}")
+    else:
+        print("No friends available on the server.")
 
 class VoIPClient:
     def __init__(self, id, host='127.0.0.1', port=8080, username="no username"):
@@ -20,6 +29,7 @@ class VoIPClient:
         self.port = port
         self.isConnected = False
         self.message = {}
+        self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     def connect_to_server(self):
         self.message = {
@@ -33,9 +43,13 @@ class VoIPClient:
             self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             self.client_socket.connect((self.host, self.port))
             response = self.send_message(json.dumps(self.message))
-            if json.loads(response).get("code") == REQUEST_CODES["OK"]:
-                print(f"Connected to server as {self.username}.")
+            response = json.loads(response)
+            if response.get("code") == REQUEST_CODES["OK"]:
+                print(f"Connected to server as {response.get('payload', 'Unknown')}.")
                 self.isConnected = True
+            else:
+                print(f"Failed to connect: {response.get('payload', 'Unknown error')}")
+                self.client_socket.close()
         except socket.error as e:
             print(f"Failed to connect to server: Server not available.")
 
@@ -53,7 +67,7 @@ class VoIPClient:
                 if json.loads(response).get("code") == REQUEST_CODES["OK"]:
                     self.isConnected = False
             else:
-                print(f"Failed to disconnect.")
+                print(f"You're not connected.")
             self.client_socket.close()
         except socket.error as e:
             self.client_socket.close()
@@ -66,12 +80,28 @@ class VoIPClient:
         }
         try:
             if self.isConnected:
-                self.client_socket.send(json.dumps(self.message).encode('utf-8'))
-                response = self.client_socket.recv(1024).decode('utf-8')
+                response = self.send_message(json.dumps(self.message))
                 if json.loads(response).get("code") == REQUEST_CODES["OK"]:
                     print("Client is connected to the server.")
                 else:
                     print("Client is not connected to the server.")
+            else:
+                print("Client is not connected to the server.")
+        except socket.error as e:
+            print(f"Server not available: {e}")
+
+    def friends_list(self):
+        self.message = {
+            "code": REQUEST_CODES["FRIENDS_LIST"],
+            "payload": {'id': self.id}
+        }
+        try:
+            if self.isConnected:
+                response = self.send_message(json.dumps(self.message))
+                if json.loads(response).get("code") == REQUEST_CODES["OK"]:
+                    print_friends(json.loads(response).get("payload"))
+                else:
+                    print("An error occurred while fetching friends list.")
             else:
                 print("Client is not connected to the server.")
         except socket.error as e:
