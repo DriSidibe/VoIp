@@ -1,6 +1,6 @@
-import json
 import cmd2
-from voip.server import server
+from server import server
+from utils.utils import get_all_settings_from_json
 
 class VoIPServerCLI(cmd2.Cmd):
     def __init__(self, host: str, port: int):
@@ -74,15 +74,15 @@ class VoIPServerCLI(cmd2.Cmd):
         return True
 
 if __name__ == '__main__':
-    port = None
-    host = None
-    with open('voip/server/settings.json', 'r') as f:
-        settings = json.load(f)
-        port=settings["server"]["port"]
-        host=settings["server"]["host"]
+    settings = get_all_settings_from_json()
+    try:
+        port = settings['server']['port']
+        host = settings['server']['host']
+    except KeyError:
+        port, host = None, None
 
     if not (port and host):
-        port, host = "localhost", 8080
+        host, port = "localhost", 8080
 
     app = VoIPServerCLI(host, port)
     app.cmdloop()

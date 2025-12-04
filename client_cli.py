@@ -1,6 +1,7 @@
-from api import VoIPClient
 import cmd2
 import sys
+
+from client.api import VoIPClient
 
 class VoIPClientCLI(cmd2.Cmd):
     def __init__(self, id, host='127.0.0.1', port=8080):
@@ -19,7 +20,15 @@ class VoIPClientCLI(cmd2.Cmd):
     def do_disconnect(self, arg):
         """Disconnect the client from the server. Usage: disconnect"""
         self.client.disconnect()
+        try:
+            self.client.client_socket.close()
+        except:
+            pass
         self.client = VoIPClient(self.id, self.host, self.port)
+        
+    def do_send_text(self, arg):
+        """Send a text message to someone. Usage: send_text <recipient_username> <message>"""
+        self.client.text_friend(arg)
 
     def do_status(self, arg):
         """Check client status on the server. Usage: status"""

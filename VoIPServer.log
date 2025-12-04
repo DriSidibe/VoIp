@@ -89,3 +89,189 @@
 2025-11-30 22:36:26,849 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
 2025-11-30 22:36:32,445 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
 2025-11-30 22:36:32,446 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-01 14:54:35,671 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-01 14:57:41,841 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-01 15:01:35,175 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 13:17:54,710 - INFO - Server listening on localhost:8080...
+2025-12-02 13:18:43,110 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-02 16:59:32,871 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 16:59:35,733 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-02 16:59:35,733 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-02 17:00:06,421 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 17:00:06,421 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 17:44:52,397 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 17:45:02,149 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 17:45:02,150 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 17:45:13,371 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-02 17:45:13,371 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 17:45:13,371 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is already connected.
+2025-12-02 17:47:11,756 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-02 17:47:16,993 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 17:47:16,993 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is already connected.
+2025-12-02 17:47:23,854 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-02 17:47:23,854 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 17:47:23,854 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is already connected.
+2025-12-02 17:47:30,636 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-02 17:48:58,014 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 17:49:01,460 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 17:49:01,460 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 17:49:35,025 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-12-02 17:49:35,025 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-12-02 17:51:40,341 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 17:51:46,490 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 17:51:46,490 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 17:53:08,791 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-12-02 17:53:08,791 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-12-02 17:53:23,879 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 17:53:23,879 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 17:53:26,934 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-02 21:33:40,709 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 21:34:04,178 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 21:34:04,178 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 21:35:08,797 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-02 21:35:08,797 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-02 21:36:15,115 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-02 21:37:21,406 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-02 21:39:08,044 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 21:39:15,124 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 21:39:15,125 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 21:39:34,477 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-02 21:40:47,725 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 21:40:53,564 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 21:40:53,564 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 21:40:59,270 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-02 21:42:07,115 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 21:42:13,968 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 21:42:13,968 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 21:42:21,162 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-02 21:43:43,243 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 21:43:46,563 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 21:43:46,563 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 21:43:53,244 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-02 21:44:57,017 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 21:45:08,863 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 21:45:08,863 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 21:45:24,165 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-02 21:47:25,420 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 21:48:16,860 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 21:48:16,861 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 21:48:18,606 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-02 21:49:31,169 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 21:49:36,695 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 21:49:36,695 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 21:49:42,148 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-02 21:53:00,560 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-02 21:53:11,866 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-02 21:53:11,866 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-02 21:53:36,460 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-02 21:53:36,460 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-02 22:02:05,221 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-02 22:02:07,144 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-03 22:50:59,282 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-03 22:54:32,382 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-03 22:58:34,193 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-03 23:10:22,798 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-03 23:15:50,295 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-03 23:15:55,870 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-03 23:15:55,870 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-03 23:17:24,955 - ERROR - An error occurred in client listener: [Errno 104] Connection reset by peer
+2025-12-03 23:17:31,658 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-03 23:17:39,598 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-03 23:17:39,598 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-03 23:19:20,849 - ERROR - An error occurred in client listener: [Errno 104] Connection reset by peer
+2025-12-03 23:19:27,415 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-03 23:19:35,114 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-03 23:19:35,114 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-03 23:29:56,444 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-03 23:30:03,857 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-03 23:30:25,501 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-03 23:30:25,501 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-03 23:35:34,175 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-03 23:35:40,113 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-03 23:35:40,114 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-03 23:36:49,913 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-03 23:36:54,904 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-03 23:36:54,904 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-04 10:05:44,795 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-04 10:14:59,360 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:15:04,707 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:15:04,707 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:15:48,675 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-04 10:16:19,747 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:16:25,092 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:16:25,093 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:16:31,753 - ERROR - An error occurred in client listener: 'utf-8' codec can't decode byte 0x9a in position 5: invalid start byte
+2025-12-04 10:18:10,375 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:18:15,035 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:18:15,035 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:18:50,799 - ERROR - An error occurred in client listener: 'utf-8' codec can't decode byte 0x91 in position 4: invalid start byte
+2025-12-04 10:19:33,280 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:19:39,774 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:19:39,774 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:19:44,787 - ERROR - An error occurred in client listener: 'utf-8' codec can't decode byte 0xbe in position 1: invalid start byte
+2025-12-04 10:21:23,880 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:21:28,454 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:21:28,454 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:21:47,091 - ERROR - An error occurred in client listener: 'utf-8' codec can't decode byte 0x99 in position 2: invalid start byte
+2025-12-04 10:23:31,978 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:23:36,894 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:23:36,894 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:23:41,312 - ERROR - An error occurred in client listener: 'utf-8' codec can't decode byte 0x8e in position 0: invalid start byte
+2025-12-04 10:26:27,855 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:26:35,898 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:26:35,898 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:26:40,050 - ERROR - An error occurred in client listener: 'list' object has no attribute 'get'
+2025-12-04 10:29:40,189 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:29:44,893 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:29:44,893 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:30:04,977 - ERROR - An error occurred in client listener: 'list' object has no attribute 'get'
+2025-12-04 10:31:05,993 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:31:13,279 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:31:13,279 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:31:17,491 - ERROR - An error occurred in client listener: 'list' object has no attribute 'get'
+2025-12-04 10:33:38,308 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:33:49,021 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:33:49,021 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:34:08,373 - ERROR - An error occurred in client listener: 'list' object has no attribute 'get'
+2025-12-04 10:35:53,105 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:35:57,680 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:35:57,680 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:36:49,918 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-04 10:36:49,918 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-04 10:42:55,993 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 10:42:57,757 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 10:43:17,235 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:43:24,070 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-04 10:43:24,070 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-04 10:43:32,123 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:43:32,123 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:43:54,251 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 10:43:54,252 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 10:44:36,312 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 10:45:49,218 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:46:02,744 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:46:02,744 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:46:06,111 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 10:46:06,111 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 10:49:17,397 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:49:28,914 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:49:28,914 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:49:31,428 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 10:49:31,428 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 10:55:21,344 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 10:55:26,525 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:55:26,526 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:55:29,886 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 10:55:29,886 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 10:55:51,893 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 10:55:51,893 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 10:56:05,405 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-04 10:56:05,405 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-04 10:56:27,169 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-12-04 10:56:27,169 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-12-04 11:01:16,101 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-04 11:01:16,103 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-04 11:01:18,735 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-12-04 11:01:18,736 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-12-04 11:01:26,794 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 11:01:26,794 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
