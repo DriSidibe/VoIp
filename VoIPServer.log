@@ -275,3 +275,8 @@
 2025-12-04 11:01:18,736 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
 2025-12-04 11:01:26,794 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
 2025-12-04 11:01:26,794 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 11:05:14,779 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 11:05:16,600 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 11:05:16,600 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 11:05:28,650 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 11:05:28,651 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
