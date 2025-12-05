@@ -275,3 +275,85 @@
 2025-12-04 11:01:18,736 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
 2025-12-04 11:01:26,794 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
 2025-12-04 11:01:26,794 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-05 11:17:57,727 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:18:05,543 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:18:05,544 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:18:15,513 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 11:18:15,513 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 11:24:14,513 - ERROR - An error occurred in client listener: string indices must be integers, not 'str'
+2025-12-05 11:26:35,288 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:26:39,442 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:26:39,442 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:26:45,843 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 11:26:45,843 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 11:32:06,201 - ERROR - An error occurred in client listener: string indices must be integers, not 'str'
+2025-12-05 11:32:07,874 - ERROR - An error occurred in client listener: string indices must be integers, not 'str'
+2025-12-05 11:32:13,085 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:33:16,655 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:35:01,170 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:35:04,792 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:35:04,793 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:35:10,722 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 11:35:10,722 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 11:36:59,470 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-05 11:38:33,098 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:38:38,569 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:38:38,569 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:38:45,442 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-05 11:39:44,741 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:39:50,474 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:39:50,474 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:40:02,934 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-05 11:41:27,342 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:41:32,227 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:41:32,228 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:41:39,392 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-05 11:42:47,072 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:42:51,300 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:42:51,300 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:42:58,623 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-05 11:43:57,710 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:44:04,175 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:44:04,175 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:45:03,699 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-05 11:45:20,438 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:45:23,230 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:45:23,230 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:45:56,489 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-05 11:47:29,414 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:47:33,491 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:47:33,491 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:47:43,833 - ERROR - An error occurred in client listener: cannot access local variable 'message' where it is not associated with a value
+2025-12-05 11:48:23,063 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:48:27,945 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:48:27,945 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:48:33,202 - ERROR - An error occurred in client listener: string indices must be integers, not 'str'
+2025-12-05 11:49:37,553 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:49:40,929 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:49:40,930 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:49:46,403 - ERROR - An error occurred in client listener: string indices must be integers, not 'str'
+2025-12-05 11:50:59,848 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:51:04,425 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:51:04,425 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:51:15,764 - ERROR - An error occurred in client listener: string indices must be integers, not 'str'
+2025-12-05 11:51:59,824 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:52:03,141 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:52:03,141 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:52:08,396 - ERROR - An error occurred in client listener: string indices must be integers, not 'str'
+2025-12-05 11:52:57,358 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:53:01,575 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:53:01,575 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:53:06,187 - ERROR - An error occurred in client listener: 'str' object has no attribute 'copy'
+2025-12-05 11:55:22,573 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:55:26,105 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:55:26,105 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:55:39,460 - ERROR - An error occurred in client listener: Expecting value: line 1 column 1 (char 0)
+2025-12-05 11:56:00,894 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 11:56:06,032 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 11:56:06,032 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 11:56:16,997 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 11:56:16,998 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 11:56:28,733 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-12-05 11:56:28,733 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-12-05 11:56:47,443 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-05 11:56:47,443 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
