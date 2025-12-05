@@ -1,83 +1,12 @@
-2025-12-05 17:11:05,149 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:11:17,943 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:11:17,944 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:11:18,008 - ERROR - An error occurred in client listener: 160 'RETRIEVE_MESSAGES'
-2025-12-05 17:12:07,794 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:12:12,024 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:12:12,025 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:21:30,930 - ERROR - An error occurred in client listener: 135 [Errno 104] Connection reset by peer
-2025-12-05 17:21:36,495 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:21:41,249 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:21:41,249 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:23:24,040 - ERROR - An error occurred in client listener: 135 [Errno 104] Connection reset by peer
-2025-12-05 17:23:33,997 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:23:39,998 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:23:39,998 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:27:47,527 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:27:55,348 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:27:59,228 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:27:59,228 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:32:22,846 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:32:28,554 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:32:33,393 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:32:33,393 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:33:06,387 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:33:10,685 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:33:16,138 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:33:16,138 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:36:00,122 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:37:38,926 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:37:46,892 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:37:46,892 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:42:56,644 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:43:02,324 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:43:06,664 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:43:06,664 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:44:04,406 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:44:12,108 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:44:16,008 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:44:16,008 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:48:45,590 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:48:50,231 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:48:54,885 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:48:54,885 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:49:40,109 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:49:45,455 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:49:49,770 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:49:49,770 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:52:54,822 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:53:08,470 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:53:12,355 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:53:12,355 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:53:54,000 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:53:58,797 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:54:05,246 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:54:05,246 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:55:08,776 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:55:16,713 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:55:21,448 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:55:21,448 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:56:08,765 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:56:14,637 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:56:18,592 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:56:18,592 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:57:06,601 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:57:12,317 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:57:16,318 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:57:16,318 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:57:30,011 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 17:57:34,821 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 17:57:39,679 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 17:57:39,679 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 17:58:14,069 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
-2025-12-05 17:58:14,069 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
-2025-12-05 17:59:32,244 - ERROR - An error occurred in client listener: 135 Expecting ':' delimiter: line 1 column 1025 (char 1024)
-2025-12-05 18:00:15,549 - ERROR - An error occurred in client listener: 135 Expecting value: line 1 column 1 (char 0)
-2025-12-05 18:01:18,191 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:01:23,913 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:01:23,914 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:03:58,353 - ERROR - An error occurred in client listener: 135 [Errno 104] Connection reset by peer
-2025-12-05 18:04:02,799 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:04:08,678 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:04:08,678 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:08:12,165 - ERROR - An error occurred in client listener: 134 [Errno 104] Connection reset by peer
+2025-12-05 18:33:18,424 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 18:33:26,383 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 18:33:26,384 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 18:33:55,790 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 18:33:58,654 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 18:33:58,654 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 18:35:00,979 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 18:35:05,257 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 18:35:05,257 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 18:36:30,820 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 18:36:35,426 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 18:36:35,426 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.

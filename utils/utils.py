@@ -5,6 +5,9 @@ import socket
 
 from . import security
 
+UNIT_CHUNK_SIZE = 1024
+DELIMITER = b'::END::'
+
 REQUEST_CODES = {
     "OK": 200,
     "OK_CONNECT": 201,
@@ -157,6 +160,7 @@ def encode_message(message: dict):
         
 def send_message(message: bytes, _socket: socket.socket, public_key = None):
     try:
+        message += DELIMITER
         message = security.encrypt_message(message, public_key.encode('utf-8')) if public_key else message
         if public_key:
             for key in message:
@@ -168,7 +172,10 @@ def send_message(message: bytes, _socket: socket.socket, public_key = None):
     
 def receive_message(_socket: socket.socket, private_key = None):
     try:
-        response = _socket.recv(1024)
+        response = b''
+        while response.endswith(DELIMITER) is False:
+            response += _socket.recv(UNIT_CHUNK_SIZE)
+        response = response[:-len(DELIMITER)]
         if private_key:
             response = response.decode('utf-8')
             response = json.loads(response)
