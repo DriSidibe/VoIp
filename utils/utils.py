@@ -6,15 +6,19 @@ from . import security
 
 REQUEST_CODES = {
     "OK": 200,
+    "OK_CONNECT": 201,
+    "OK_DISCONNECT": 202,
     "BAD_REQUEST": 400,
     "NOT_FOUND": 404,
     "INTERNAL_ERROR": 500,
     "CLOSE": 600,
     "PING": 700,
+    "OK_PING": 701,
     "CONNECT": 800,
     "DISCONNECT": 900,
     "FRIENDS_LIST": 1000,
-    "SEND_TEXT": 1100
+    "SEND_TEXT": 1100,
+    "NOT_FOUND": 1200
 }
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -68,8 +72,36 @@ def print_friends(friends):
         print("Available friends on the server:")
         for friend in friends:
             print(f"- {friend}")
+        print("(VoIPClientCLI) ", end='', flush=True)
     else:
         print("No friends available on the server.")
+        
+def store_message(sender, recipient, datetime, message):
+    file_path = os.path.join(base_dir, '..', 'messages.json')
+    try:
+        if not os.path.exists(file_path):
+            with open(file_path, 'w') as f:
+                json.dump({"messages": {}}, f, indent=4)
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+        sender_messages = data.get(sender, [])
+        sender_messages.append({
+            "to": recipient,
+            "datetime": datetime,
+            "message": message
+        })
+        recipient_messages = data.get(recipient, [])
+        recipient_messages.append({
+            "from": recipient,
+            "datetime": datetime,
+            "message": message
+        })
+        data[sender] = sender_messages
+        data[recipient] = recipient_messages
+        with open(file_path, 'w') as f:
+            json.dump(data, f, indent=4)
+    except Exception as e:
+        print(f"Error storing message: {e}")
         
 def encode_message(message: dict):
     return json.dumps(message).encode('utf-8')

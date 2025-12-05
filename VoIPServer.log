@@ -280,3 +280,227 @@
 2025-12-04 11:05:16,600 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
 2025-12-04 11:05:28,650 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
 2025-12-04 11:05:28,651 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 17:20:35,939 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 17:21:32,443 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 17:21:43,174 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 17:21:43,174 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 17:22:46,904 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 17:22:51,369 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 17:22:51,369 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 17:24:03,135 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 17:24:06,555 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 17:24:06,555 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 17:30:38,571 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 17:30:45,635 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 17:30:45,635 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 17:31:59,143 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 17:37:32,875 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 17:37:55,375 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 17:37:55,375 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 17:38:01,932 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 17:44:16,608 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 17:44:20,965 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 17:44:20,965 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 17:45:32,817 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 17:45:37,088 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 17:45:41,485 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 17:45:41,486 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 17:57:31,749 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 17:57:36,867 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 17:57:41,256 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 17:57:41,256 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 18:02:36,240 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 18:02:43,572 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 18:02:48,761 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 18:02:48,761 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 19:36:00,984 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 19:36:08,629 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 19:36:13,463 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 19:36:13,463 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 19:40:50,542 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 19:40:56,417 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 19:41:03,603 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 19:41:03,604 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 19:41:11,540 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 19:41:36,414 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 19:41:43,874 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 19:41:43,875 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 19:42:11,933 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 19:43:37,010 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 19:43:40,987 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 19:43:40,987 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 19:45:29,160 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 19:45:34,055 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 19:45:34,056 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 19:45:41,876 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 19:45:41,876 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 19:45:41,877 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 19:51:30,790 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 19:51:43,670 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 19:51:43,670 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 19:51:47,456 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 19:51:47,457 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 19:51:47,457 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 19:57:45,279 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 19:57:50,453 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 19:57:50,453 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 19:57:59,884 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 19:57:59,884 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 19:57:59,885 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 19:58:28,095 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 19:58:28,095 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 19:58:33,717 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 19:58:33,717 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 19:58:33,717 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 20:00:34,100 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 20:01:04,287 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-04 20:01:04,288 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-04 20:01:22,781 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:01:22,781 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:01:38,161 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-12-04 20:01:38,162 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-12-04 20:01:38,162 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 20:02:00,155 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 20:02:00,156 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 20:02:00,156 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 20:04:37,512 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 20:04:45,686 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:04:45,687 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:04:49,644 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-04 20:04:49,644 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-04 20:08:57,044 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 20:08:59,196 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 20:28:16,215 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 20:28:25,444 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:28:25,444 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:28:30,136 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-04 20:28:30,136 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-04 20:33:59,057 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 20:36:46,567 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 20:36:51,479 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:36:51,479 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:40:01,375 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 20:42:13,336 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 20:42:17,460 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:42:17,460 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:43:34,534 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-04 20:43:40,772 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 20:43:45,785 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:43:45,785 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:44:31,191 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 20:44:31,191 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 20:44:31,192 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 20:44:40,325 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:44:40,325 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:46:12,406 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-04 20:46:12,406 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-04 20:46:28,125 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 20:46:28,126 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 20:46:28,126 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 20:46:42,795 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:46:42,795 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:50:06,537 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 20:50:06,537 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 20:50:06,538 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 20:50:15,634 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:50:15,634 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:50:41,376 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 20:50:41,377 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 20:50:41,377 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 20:50:46,297 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
+2025-12-04 20:50:46,297 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
+2025-12-04 20:50:46,297 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 20:50:54,242 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-04 20:51:00,966 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-04 20:51:00,966 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-04 20:51:06,074 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:51:06,074 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:51:36,481 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 20:51:36,482 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 20:51:36,482 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-04 20:51:44,338 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-04 20:51:44,338 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-04 20:51:59,626 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
+2025-12-04 20:51:59,627 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
+2025-12-04 20:51:59,627 - ERROR - An error occurred in client listener: [Errno 9] Bad file descriptor
+2025-12-05 09:50:44,072 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 09:50:49,185 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 09:50:49,186 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 09:50:55,870 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 09:50:55,871 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 09:52:24,011 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 09:52:25,768 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 09:52:32,080 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 09:52:36,887 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 09:52:36,888 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 09:52:42,302 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 09:52:42,302 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 09:53:52,386 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 09:53:54,506 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 09:54:09,249 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 09:54:14,030 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 09:54:14,031 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 09:54:18,985 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 09:54:18,986 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 09:58:00,489 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 09:58:02,136 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 09:58:07,337 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 09:58:10,929 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 09:58:10,930 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:00:52,369 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:00:56,007 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:00:56,007 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:03:42,885 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:03:48,023 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:03:48,023 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:05:34,665 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:05:39,894 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:05:39,894 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:06:20,041 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 10:06:20,041 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 10:23:40,656 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:23:45,690 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:23:45,690 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:23:50,429 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 10:23:50,429 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 10:25:05,486 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:25:09,393 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:25:09,393 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:25:14,485 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 10:25:14,486 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 10:27:45,266 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:27:50,854 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 10:27:50,855 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 10:27:57,355 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:27:57,355 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:29:53,238 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:29:58,406 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 10:29:58,406 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 10:30:03,503 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:30:03,503 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:31:03,241 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:31:08,541 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 10:31:08,541 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 10:31:13,732 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:31:13,732 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:32:55,369 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:32:58,800 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 10:32:58,800 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 10:33:04,749 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:33:04,749 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:37:37,118 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 10:37:38,794 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 10:37:57,923 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:38:05,008 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:38:05,008 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:38:07,672 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 10:38:07,673 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 10:39:48,202 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 10:39:51,166 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 10:40:09,898 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-05 10:40:18,419 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-05 10:40:18,420 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-05 10:40:25,428 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-05 10:40:25,428 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-05 10:51:29,765 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
+2025-12-05 11:07:57,123 - ERROR - An error occurred in client listener: Ciphertext length must be equal to key size.
