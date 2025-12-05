@@ -106,9 +106,13 @@ def store_message(sender, recipient, datetime, message):
 def encode_message(message: dict):
     return json.dumps(message).encode('utf-8')
         
-def send_message(message, _socket: socket.socket, public_key = None):
+def send_message(message: bytes, _socket: socket.socket, public_key = None):
     try:
         message = security.encrypt_message(message, public_key.encode('utf-8')) if public_key else message
+        if public_key:
+            for key in message:
+                message[key] = message[key].hex()
+            message = encode_message(message)
         return _socket.send(message)
     except socket.error as e:
         raise e
@@ -116,8 +120,12 @@ def send_message(message, _socket: socket.socket, public_key = None):
 def receive_message(_socket: socket.socket, private_key = None):
     try:
         response = _socket.recv(1024)
-        response = security.decrypt_message(response, private_key) if private_key else response
-        message = response.decode('utf-8')
+        if private_key:
+            response = response.decode('utf-8')
+            response = json.loads(response)
+            for key in response.copy():
+                response[key] = bytes.fromhex(response[key])
+        message = security.decrypt_message(response, private_key) if private_key else response
         return message
     except socket.error as e:
         raise e
