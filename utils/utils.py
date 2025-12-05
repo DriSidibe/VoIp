@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 import socket
@@ -18,7 +19,8 @@ REQUEST_CODES = {
     "DISCONNECT": 900,
     "FRIENDS_LIST": 1000,
     "SEND_TEXT": 1100,
-    "NOT_FOUND": 1200
+    "NOT_FOUND": 1200,
+    "MESSAGES_RETRIEVE": 1300
 }
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -81,7 +83,7 @@ def store_message(sender, recipient, datetime, message):
     try:
         if not os.path.exists(file_path):
             with open(file_path, 'w') as f:
-                json.dump({"messages": {}}, f, indent=4)
+                json.dump({}, f, indent=4)
         with open(file_path, 'r') as f:
             data = json.load(f)
         sender_messages = data.get(sender, [])
@@ -102,6 +104,53 @@ def store_message(sender, recipient, datetime, message):
             json.dump(data, f, indent=4)
     except Exception as e:
         print(f"Error storing message: {e}")
+
+def connection_required(isConnected):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            try:
+                if isConnected():
+                    func(*args, **kwargs)
+                else:
+                    print("Client is not connected to the server.")
+            except socket.error as e:
+                print(f"Server not available: {e}")
+        return wrapper
+    return decorator
+
+def get_messages(interlocutor, from_date=None, to_date=None, from_user=None):
+        file_path = base_dir + '/../messages.json'
+        try:
+            with open(file_path, 'r') as f:
+                data = json.load(f)
+            user_messages = data.get(interlocutor.get("username", "no username"), [])
+            filtered_messages = []
+            for msg in user_messages:
+                msg_datetime = datetime.datetime.fromisoformat(msg['datetime'].replace("Z", "+00:00"))
+                if from_date and msg_datetime < from_date:
+                    continue
+                if to_date and msg_datetime > to_date:
+                    continue
+                if from_user and msg.get('from', '') != from_user and msg.get('to', '') != from_user:
+                    continue
+                filtered_messages.append(msg)
+                autor_ = ""
+                try:
+                    autor_ = msg['from']
+                    msg['autor'] = autor_ + '->me'
+                except KeyError:
+                    autor_ = msg['to']
+                    msg['autor'] = 'me->' + autor_
+                finally:
+                    autor_ = str(msg["autor"]).replace(interlocutor.get("username", "no username"), "me")
+                    msg['autor'] = autor_
+            return filtered_messages
+        except FileNotFoundError:
+            print("No messages found.")
+            return []
+        except Exception as e:
+            print(f"Error retrieving messages: {e.__traceback__.tb_lineno} {e}")
+            return []
         
 def encode_message(message: dict):
     return json.dumps(message).encode('utf-8')

@@ -1,3 +1,4 @@
+import datetime
 import socket
 import logging
 import json
@@ -60,7 +61,7 @@ class VoIPServer(socket.socket):
         pass
     
     def ping(self, client_socket: socket.socket, interlaucutor: dict):
-        utils.send_message(utils.encode_message({"code": utils.REQUEST_CODES["OK_PING"]}), client_socket, interlaucutor.get("public_key", None))
+        utils.send_message(utils.encode_message({"code": utils.REQUEST_CODES["PING"]}), client_socket, interlaucutor.get("public_key", None))
         
     def disconnect_client(self, client_socket: socket.socket, data, interlaucutor: dict):
         message = {
@@ -83,7 +84,6 @@ class VoIPServer(socket.socket):
         message = {
             "code": utils.REQUEST_CODES["FRIENDS_LIST"],
             "payload": friends,
-            "encrypted": True
         }
         utils.send_message(utils.encode_message(message), client_socket, interlaucutor.get("public_key", None))
         
@@ -104,7 +104,6 @@ class VoIPServer(socket.socket):
                     "message": message_text,
                     "datetime": _datetime
                 },
-                "encrypted": True
             }
             utils.store_message(sender_username, recipient_username, _datetime, message_text)
             utils.send_message(utils.encode_message(message), recipient_client['socket'], recipient_client.get("public_key", None))
@@ -112,13 +111,22 @@ class VoIPServer(socket.socket):
                 "code": utils.REQUEST_CODES["OK"],
                 "payload": f"Message sent to {recipient_username}."
             }
-            utils.send_message(utils.encode_message(ack_message), client_socket, interlaucutor.get("public_key", None))
         else:
             ack_message = {
                 "code": utils.REQUEST_CODES["NOT_FOUND"],
                 "payload": f"Recipient {recipient_username} not found."
             }
         utils.send_message(utils.encode_message(ack_message), client_socket, interlaucutor.get("public_key", None))
+        
+    def get_messages(self, client_socket: socket.socket, data, interlaucutor: dict):
+        messages = utils.get_messages(interlaucutor, data.get("from_date"), data.get("to_date"), data.get("from_user"))
+        message = {
+                "code": utils.REQUEST_CODES["MESSAGES_RETRIEVE"],
+                "payload": {
+                    "messages": messages
+                }
+            }
+        utils.send_message(utils.encode_message(message), client_socket, interlaucutor.get("public_key", None))
 
     def _listen_client(self, client_socket: socket.socket):
         try:
@@ -134,10 +142,10 @@ class VoIPServer(socket.socket):
                     self.close_server(client_socket)
                 
                 if(data.get("code") == utils.REQUEST_CODES["PING"]):
-                    self.ping(client_socket, interlaucutor.get("public_key", None))
+                    self.ping(client_socket, interlaucutor)
                     
                 if(data.get("code") == utils.REQUEST_CODES["DISCONNECT"]):
-                    res = self.disconnect_client(data['payload']['id'], client_socket, data, interlaucutor)
+                    res = self.disconnect_client(client_socket, data, interlaucutor)
                     if res == 1:
                         break
                         
@@ -146,8 +154,13 @@ class VoIPServer(socket.socket):
                     
                 if(data.get("code") == utils.REQUEST_CODES["SEND_TEXT"]):
                     self.send_text(client_socket, data, interlaucutor)
+                    
+                if(data.get("code") == utils.REQUEST_CODES["MESSAGES_RETRIEVE"]):
+                    self.get_messages(client_socket, data['payload'], interlaucutor)
+                    
         except Exception as e:
-            self.logger.error(f"An error occurred in client listener: {e}")
+            print(f"An error occurred in client listener.\n(VoIPServerCLI) ")
+            self.logger.error(f"An error occurred in client listener: {e.__traceback__.tb_lineno} {e}")
 
     def describe(self):
         return f"VoIpServer -- {self} --"

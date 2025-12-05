@@ -5,20 +5,48 @@ import threading
 
 from utils import utils, security
 
+client_is_connected = False
 
 class VoIPClient:
+    
     def __init__(self, id, host='127.0.0.1', port=8080, username="no username"):
         self.id = id
         self.username = username
         self.host = host
         self.port = port
-        self.isConnected = False
+        self._listeners = []
+        self._isConnected = False
         self.message = {}
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server_public_key = None
         self.private_key, self.public_key = security.generate_keys()
         self.private_key = security.get_private_key(self.private_key)
         self.public_key = security.get_public_key(self.public_key)
+        
+        
+        self.subscribe(self.on_connection_status_change)
+        
+    def subscribe(self, callback):
+        self._listeners.append(callback)
+
+    def unsubscribe(self, callback):
+        self._listeners.remove(callback)
+
+    @property
+    def isConnected(self):
+        return self._isConnected
+
+    @isConnected.setter
+    def isConnected(self, new_value):
+        old_value = self._isConnected
+        self._isConnected = new_value
+
+        for callback in self._listeners:
+            callback(old_value, new_value)
+            
+    def on_connection_status_change(self, old_value, new_value):
+        global client_is_connected
+        client_is_connected = new_value
         
     def create_connection(self):
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -38,9 +66,11 @@ class VoIPClient:
             response = utils.send_message_and_wait_for_response(utils.encode_message(self.message), self.client_socket)
             response = json.loads(response)
             if response.get("code") == utils.REQUEST_CODES["OK_CONNECT"]:
-                print(f"Connected to server as {response.get('payload', 'Unknown')}.")
+                self.username = response.get('payload', 'Unknown')
+                print(f"Connected to server as {self.username}.")
                 self.isConnected = True
                 self.server_public_key = response.get("public_key")
+                self.get_messages(self.id)
                 threading.Thread(target=self.receive_message_in_external_thread, daemon=True, args=[self.client_socket, self.private_key]).start()
             else:
                 print(f"Failed to connect: {response.get('payload', 'Unknown error')}")
@@ -54,11 +84,11 @@ class VoIPClient:
         payload = response.get("payload")
         
         if code == utils.REQUEST_CODES["OK"]:
-            utils.print(payload)
+            print(payload)
             print("(VoIPClientCLI) ", end='', flush=True)
         
         if response.get("code") == utils.REQUEST_CODES["OK_CONNECT"]:
-            self.username = response.get('payload', 'no username')
+            self.username = payload
             print(f"Connected to server as {response.get('payload', 'Unknown')}.")
             print("(VoIPClientCLI) ")
             self.isConnected = True
@@ -67,7 +97,7 @@ class VoIPClient:
         if response.get("code") == utils.REQUEST_CODES["OK_DISCONNECT"]:
             self.isConnected = False
             
-        if response.get("code") == utils.REQUEST_CODES["OK_PING"]:
+        if response.get("code") == utils.REQUEST_CODES["PING"]:
             print("You are still connected.")
             print("(VoIPClientCLI) ")
             
@@ -83,8 +113,20 @@ class VoIPClient:
         if code == utils.REQUEST_CODES["SEND_TEXT"]:
             sender = payload.get("from", "Unknown")
             message = payload.get("message", "")
-            datetime_str = payload.get("datetime", "")
-            print(f"\nNew message from {sender} at {datetime_str}: {message}\n(VoIPClientCLI) ", end='', flush=True)
+            print(f"\nNew ~ {sender}: {message}\n(VoIPClientCLI) ", end='', flush=True)
+            
+        if code == utils.REQUEST_CODES["MESSAGES_RETRIEVE"]:
+            messages = payload.get("messages", [])
+            if messages:
+                print("Retrieved Messages:")
+                for msg in messages:
+                    dt = msg.get("datetime", "Unknown time")
+                    autor = msg.get("autor", "Unknown")
+                    content = msg.get("message", "")
+                    print(f"[{dt}] {autor}: {content}")
+            else:
+                print("No messages found with the given criteria.")
+            print("(VoIPClientCLI) ", end='', flush=True)
             
         if code == utils.REQUEST_CODES["FRIENDS_LIST"]:
             utils.print_friends(payload)
@@ -115,59 +157,76 @@ class VoIPClient:
         except socket.error as e:
             self.client_socket.close()
             self.server_public_key = None
+            self.isConnected = False
             print(f"Error while disconnecting: {e}")
 
+    @utils.connection_required(lambda: client_is_connected) 
     def status(self):
         self.message = {
             "code": utils.REQUEST_CODES["PING"],
             "payload": {
                 "id": self.id
-            }
+            },
         }
-        try:
-            if self.isConnected:
-                utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
-            else:
-                print("You are not connected to the server.")
-        except socket.error as e:
-            print(f"Server not available: {e}")
+        utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
 
+    @utils.connection_required(lambda: client_is_connected) 
     def friends_list(self):
         self.message = {
             "code": utils.REQUEST_CODES["FRIENDS_LIST"],
             "payload": {'id': self.id},
-            "encrypted": True if self.server_public_key else False
         }
-        try:
-            if self.isConnected:
-                utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
-            else:
-                print("Client is not connected to the server.")
-        except socket.error as e:
-            print(f"Server not available: {e}")
+        utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
             
+    @utils.connection_required(lambda: client_is_connected)        
     def text_friend(self, arg):
-        try:
-            if self.isConnected:
-                parts = arg.split(' ')
-                if len(parts) < 2:
-                    print("Usage: send_text <recipient_username> <message>")
-                    return
-                recipient_username = parts[0]
-                message = ' '.join(parts[1:])
-                self.message = {
-                    "code": utils.REQUEST_CODES["SEND_TEXT"],
-                    "payload": {
-                        "id": self.id,
-                        "datetime": datetime.datetime.utcnow().isoformat() + "Z",
-                        "from": self.username,
-                        "to": recipient_username,
-                        "message": message,
-                        "encrypted": True
-                    }
-                }
-                utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
-            else:
-                print("Client is not connected to the server.")
-        except socket.error as e:
-            print(f"Server not available: {e}")
+        parts = arg.split(' ')
+        if len(parts) < 2:
+            print("Usage: send_text <recipient_username> <message>")
+            return
+        recipient_username = parts[0]
+        message = ' '.join(parts[1:])
+        print(self.username)
+        self.message = {
+            "code": utils.REQUEST_CODES["SEND_TEXT"],
+            "payload": {
+                "id": self.id,
+                "datetime": datetime.datetime.utcnow().isoformat() + "Z",
+                "from": self.username,
+                "to": recipient_username,
+                "message": message
+            }
+        }
+        utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
+            
+    @utils.connection_required(lambda: client_is_connected)         
+    def get_messages(self, arg=""):
+        parts = arg.split(' ')
+        if parts[0] == self.id:
+            parts = []
+        if len(parts) == 0:
+            from_date = None
+            to_date = None
+            from_user = None
+        elif len(parts) == 1:
+            from_date = parts[0]
+            to_date = None
+            from_user = None
+        elif len(parts) == 2:
+            from_date = parts[0]
+            to_date = parts[1]
+            from_user = None
+        else:
+            from_date = parts[0]
+            to_date = parts[1]
+            from_user = parts[2]
+        self.message = {
+            "code": utils.REQUEST_CODES["MESSAGES_RETRIEVE"],
+            "payload": {
+                "id": self.id,
+                "from_date": from_date if from_date else "",
+                "to_date": to_date if to_date else "",
+                "from_user": from_user if from_user else ""
+            }
+        }
+        utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)

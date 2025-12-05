@@ -29,6 +29,10 @@ class VoIPClientCLI(cmd2.Cmd):
     def do_send_text(self, arg):
         """Send a text message to someone. Usage: send_text <recipient_username> <message>"""
         self.client.text_friend(arg)
+    
+    def do_get_messages(self, arg):
+        """Get messages from someone. Usage: get_messages <from_date | None> <to_date | None> <from_user | None>"""
+        self.client.get_messages(arg)
 
     def do_status(self, arg):
         """Check client status on the server. Usage: status"""
