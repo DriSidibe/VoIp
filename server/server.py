@@ -55,8 +55,6 @@ class VoIPServer(socket.socket):
                     t = threading.Thread(target=self._listen_client, daemon=True, args=[client_socket,])
                     t.start()
 
-        #self.logger.info(f"Server stopped at {datetime.datetime.now}")
-
     def close_server(self, client_socket: socket.socket):
         pass
     
@@ -69,7 +67,7 @@ class VoIPServer(socket.socket):
             "payload": f"Client {data['payload']['id']} disconnected."
         }
         utils.send_message(utils.encode_message(message), client_socket, interlaucutor.get("public_key", None))
-        print(f"Disconnecting client {data['payload']['id']}...")
+        utils.print_logs_on_terminal(utils.REQUEST_CODES["DISCONNECT"], "server", data['payload']['id'])
         response = self.disconnect(data['payload']['id'], client_socket)
         if(response.get("code") == utils.REQUEST_CODES["OK"]):
             return 1
@@ -141,29 +139,31 @@ class VoIPServer(socket.socket):
                 if(data.get("code") == utils.REQUEST_CODES["CLOSE"]):
                     self.close_server(client_socket)
                 
-                if(data.get("code") == utils.REQUEST_CODES["PING"]):
+                elif(data.get("code") == utils.REQUEST_CODES["PING"]):
                     self.ping(client_socket, interlaucutor)
                     
-                if(data.get("code") == utils.REQUEST_CODES["DISCONNECT"]):
+                elif(data.get("code") == utils.REQUEST_CODES["DISCONNECT"]):
                     res = self.disconnect_client(client_socket, data, interlaucutor)
                     if res == 1:
                         break
                         
-                if(data.get("code") == utils.REQUEST_CODES["FRIENDS_LIST"]):
+                elif(data.get("code") == utils.REQUEST_CODES["FRIENDS_LIST"]):
                     self.get_friends_list(client_socket, data, interlaucutor)
                     
-                if(data.get("code") == utils.REQUEST_CODES["SEND_TEXT"]):
+                elif(data.get("code") == utils.REQUEST_CODES["SEND_TEXT"]):
                     self.send_text(client_socket, data, interlaucutor)
                     
-                if(data.get("code") == utils.REQUEST_CODES["MESSAGES_RETRIEVE"]):
+                elif(data.get("code") == utils.REQUEST_CODES["MESSAGES_RETRIEVE"]):
                     self.get_messages(client_socket, data['payload'], interlaucutor)
                     
+        except socket.error as e:
+            pass
         except Exception as e:
-            print(f"An error occurred in client listener.\n(VoIPServerCLI) ")
+            utils.print_logs_on_terminal(utils.REQUEST_CODES["INTERNAL_ERROR"], "server")
             self.logger.error(f"An error occurred in client listener: {e.__traceback__.tb_lineno} {e}")
 
     def describe(self):
-        return f"VoIpServer -- {self} --"
+        utils.print_logs_on_terminal(utils.REQUEST_CODES["DESCRIBE"], "server", self)
     
     def update_state(self, state):
         self.running = state
@@ -211,15 +211,25 @@ class VoIPServer(socket.socket):
     def start(self):
         self.update_state(True)
         try:
-            print(f"Starting server at {self.host}:{self.port}")
-            print("(VoIPClientCLI) ")
             self.listen(5)
             self.logger.info(f"Server listening on {self.host}:{self.port}...")
             self.main_listenning_thread = threading.Thread(target=self._listen, daemon=True)
             self.main_listenning_thread.start()
-            
         except Exception as e:
             self.logger.error(f"An error occurred: {e}")
 
     def stop(self):
         self.update_state(False)
+        utils.print_logs_on_terminal(utils.REQUEST_CODES["SERVER_STOP"], "server")
+        self.logger.info("Stopping server...")
+        for client in self.available_clients:
+            try:
+                client['socket'].close()
+            except socket.error as e:
+                self.logger.error(f"Error while closing client socket: {e}")
+        self.available_clients = []
+        try:
+            self.close()
+            self.logger.info("Server stopped.")
+        except socket.error as e:
+            self.logger.error(f"Error while stopping server: {e}")

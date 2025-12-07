@@ -23,7 +23,10 @@ REQUEST_CODES = {
     "FRIENDS_LIST": 1000,
     "SEND_TEXT": 1100,
     "NOT_FOUND": 1200,
-    "MESSAGES_RETRIEVE": 1300
+    "MESSAGES_RETRIEVE": 1300,
+    "DESCRIBE": 1400,
+    "SERVER_START": 1500,
+    "SERVER_STOP": 1600
 }
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -155,18 +158,41 @@ def get_messages(interlocutor, from_date=None, to_date=None, from_user=None):
             print(f"Error retrieving messages: {e.__traceback__.tb_lineno} {e}")
             return []
         
+def print_client_logs_on_terminal(request_code, messages=None):
+    if request_code == REQUEST_CODES["OK_CONNECT"]:
+        print(f"Connected to server as {messages}.")
+            
+def print_server_logs_on_terminal(request_code, messages=None):
+    print("\n>> ", end='')
+    if request_code == REQUEST_CODES["DISCONNECT"]:
+        print(f"Disconnecting client {messages}...")
+    elif request_code == REQUEST_CODES["INTERNAL_ERROR"]:
+        print(f"An error occurred in client listener.")
+    elif request_code == REQUEST_CODES["DESCRIBE"]:
+        print(f"VoIpServer -- {messages} --")
+    elif request_code == REQUEST_CODES["SERVER_START"]:
+        print(f"{messages}")
+    elif request_code == REQUEST_CODES["SERVER_STOP"]:
+        print(f"Stopping server...")
+
+def print_logs_on_terminal(request_code, interlocutor="client", messages=None):
+    if interlocutor == "client":
+        print_client_logs_on_terminal(request_code, messages)
+    else:
+        print_server_logs_on_terminal(request_code, messages)
+        
 def encode_message(message: dict):
     return json.dumps(message).encode('utf-8')
         
 def send_message(message: bytes, _socket: socket.socket, public_key = None):
     try:
-        message += DELIMITER
         message = security.encrypt_message(message, public_key.encode('utf-8')) if public_key else message
         if public_key:
             for key in message:
                 message[key] = message[key].hex()
             message = encode_message(message)
-        return _socket.send(message)
+        message += DELIMITER
+        return _socket.sendall(message)
     except socket.error as e:
         raise e
     

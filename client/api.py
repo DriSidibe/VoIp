@@ -67,7 +67,7 @@ class VoIPClient:
             response = json.loads(response)
             if response.get("code") == utils.REQUEST_CODES["OK_CONNECT"]:
                 self.username = response.get('payload', 'Unknown')
-                print(f"Connected to server as {self.username}.")
+                utils.print_logs_on_terminal(utils.REQUEST_CODES["OK_CONNECT"], "client", self.username)
                 self.isConnected = True
                 self.server_public_key = response.get("public_key")
                 self.get_messages(self.id)
@@ -87,35 +87,35 @@ class VoIPClient:
             print(payload)
             print("(VoIPClientCLI) ", end='', flush=True)
         
-        if response.get("code") == utils.REQUEST_CODES["OK_CONNECT"]:
+        elif response.get("code") == utils.REQUEST_CODES["OK_CONNECT"]:
             self.username = payload
             print(f"Connected to server as {response.get('payload', 'Unknown')}.")
             print("(VoIPClientCLI) ")
             self.isConnected = True
             self.server_public_key = response.get("public_key")
             
-        if response.get("code") == utils.REQUEST_CODES["OK_DISCONNECT"]:
+        elif response.get("code") == utils.REQUEST_CODES["OK_DISCONNECT"]:
             self.isConnected = False
             
-        if response.get("code") == utils.REQUEST_CODES["PING"]:
+        elif response.get("code") == utils.REQUEST_CODES["PING"]:
             print("You are still connected.")
             print("(VoIPClientCLI) ")
             
-        if response.get("code") == utils.REQUEST_CODES["BAD_REQUEST"]:
+        elif response.get("code") == utils.REQUEST_CODES["BAD_REQUEST"]:
             print(f"Failed to connect: {response.get('payload', 'Unknown error')}")
             print("(VoIPClientCLI) ")
             self.client_socket.close()
             
-        if response.get("code") == utils.REQUEST_CODES["INTERNAL_ERROR"]:
+        elif response.get("code") == utils.REQUEST_CODES["INTERNAL_ERROR"]:
             print("Unknown error occurred.")
             print("(VoIPClientCLI) ")
             
-        if code == utils.REQUEST_CODES["SEND_TEXT"]:
+        elif code == utils.REQUEST_CODES["SEND_TEXT"]:
             sender = payload.get("from", "Unknown")
             message = payload.get("message", "")
             print(f"\nNew ~ {sender}: {message}\n(VoIPClientCLI) ", end='', flush=True)
             
-        if code == utils.REQUEST_CODES["MESSAGES_RETRIEVE"]:
+        elif code == utils.REQUEST_CODES["MESSAGES_RETRIEVE"]:
             messages = payload.get("messages", [])
             if messages:
                 print("Retrieved Messages:")
@@ -128,7 +128,7 @@ class VoIPClient:
                 print("No messages found with the given criteria.")
             print("(VoIPClientCLI) ", end='', flush=True)
             
-        if code == utils.REQUEST_CODES["FRIENDS_LIST"]:
+        elif code == utils.REQUEST_CODES["FRIENDS_LIST"]:
             utils.print_friends(payload)
             
     def receive_message_in_external_thread(self, _socket: socket.socket, private_key = None):
@@ -137,8 +137,9 @@ class VoIPClient:
                 response = utils.receive_message(_socket, private_key)
                 self.interpret_response(response)
         except socket.error as e:
-            print(f"Connection lost: {e}")
             self.isConnected = False
+        except Exception as e:
+            print(f"Error in receiver thread: {e}")
 
     def disconnect(self):
         self.message = {

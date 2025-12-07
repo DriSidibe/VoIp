@@ -2,30 +2,120 @@
     "papa": [
         {
             "from": "papa",
-            "datetime": "2025-12-05T17:21:58.383079Z",
-            "message": "salut"
+            "datetime": "2025-12-06T17:01:34.063249Z",
+            "message": "bonjour papa"
         },
         {
             "to": "drissa",
-            "datetime": "2025-12-05T17:58:22.854180Z",
-            "message": "salut drissa"
+            "datetime": "2025-12-06T17:06:31.625949Z",
+            "message": "salut papa"
         },
         {
             "from": "papa",
-            "datetime": "2025-12-05T17:58:58.729574Z",
-            "message": "salut papa, comment va tu?"
+            "datetime": "2025-12-06T17:07:11.451721Z",
+            "message": "salut papa. je vais bien toi aussi j'esp\u00e8re!"
+        },
+        {
+            "to": "drissa",
+            "datetime": "2025-12-06T17:07:38.708135Z",
+            "message": "oui oui moi \u00e7a va nikel"
+        },
+        {
+            "from": "papa",
+            "datetime": "2025-12-06T17:07:58.825714Z",
+            "message": "Ah Dieu merci"
+        },
+        {
+            "to": "drissa",
+            "datetime": "2025-12-06T17:08:25.923083Z",
+            "message": "Dis, j'ai besoin de toi"
+        },
+        {
+            "from": "papa",
+            "datetime": "2025-12-06T17:08:37.519637Z",
+            "message": "A quel sujet?"
+        },
+        {
+            "to": "drissa",
+            "datetime": "2025-12-06T17:09:49.880156Z",
+            "message": "Vu que je viens de finir le master, je dois liberer la chambre a la cit\u00e9 si je ne m'inscris pas. du coup, je voudrais prendre tes dossier pour postuler si cela ne te pose pas de probleme bien sure!"
+        },
+        {
+            "from": "papa",
+            "datetime": "2025-12-06T17:10:22.016165Z",
+            "message": "Ah d'accord, ce n'est pas un probleme, si tu est pret tu me fait signe."
+        },
+        {
+            "to": "drissa",
+            "datetime": "2025-12-06T17:10:36.628613Z",
+            "message": "Ok \u00e7a marche merci beaucoup"
+        },
+        {
+            "to": "drissa",
+            "datetime": "2025-12-06T17:10:43.973914Z",
+            "message": "Je suis fan"
+        },
+        {
+            "from": "papa",
+            "datetime": "2025-12-06T17:10:55.976569Z",
+            "message": "On est ensemble."
         }
     ],
     "drissa": [
         {
             "from": "drissa",
-            "datetime": "2025-12-05T17:58:22.854180Z",
-            "message": "salut drissa"
+            "datetime": "2025-12-06T17:06:31.625949Z",
+            "message": "salut papa"
         },
         {
             "to": "papa",
-            "datetime": "2025-12-05T17:58:58.729574Z",
-            "message": "salut papa, comment va tu?"
+            "datetime": "2025-12-06T17:07:11.451721Z",
+            "message": "salut papa. je vais bien toi aussi j'esp\u00e8re!"
+        },
+        {
+            "from": "drissa",
+            "datetime": "2025-12-06T17:07:38.708135Z",
+            "message": "oui oui moi \u00e7a va nikel"
+        },
+        {
+            "to": "papa",
+            "datetime": "2025-12-06T17:07:58.825714Z",
+            "message": "Ah Dieu merci"
+        },
+        {
+            "from": "drissa",
+            "datetime": "2025-12-06T17:08:25.923083Z",
+            "message": "Dis, j'ai besoin de toi"
+        },
+        {
+            "to": "papa",
+            "datetime": "2025-12-06T17:08:37.519637Z",
+            "message": "A quel sujet?"
+        },
+        {
+            "from": "drissa",
+            "datetime": "2025-12-06T17:09:49.880156Z",
+            "message": "Vu que je viens de finir le master, je dois liberer la chambre a la cit\u00e9 si je ne m'inscris pas. du coup, je voudrais prendre tes dossier pour postuler si cela ne te pose pas de probleme bien sure!"
+        },
+        {
+            "to": "papa",
+            "datetime": "2025-12-06T17:10:22.016165Z",
+            "message": "Ah d'accord, ce n'est pas un probleme, si tu est pret tu me fait signe."
+        },
+        {
+            "from": "drissa",
+            "datetime": "2025-12-06T17:10:36.628613Z",
+            "message": "Ok \u00e7a marche merci beaucoup"
+        },
+        {
+            "from": "drissa",
+            "datetime": "2025-12-06T17:10:43.973914Z",
+            "message": "Je suis fan"
+        },
+        {
+            "to": "papa",
+            "datetime": "2025-12-06T17:10:55.976569Z",
+            "message": "On est ensemble."
         }
     ]
 }

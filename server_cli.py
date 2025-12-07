@@ -13,7 +13,7 @@ class VoIPServerCLI(cmd2.Cmd):
 
     def do_describe(self, arg):
         """Get infos on the VoIP server. Usage: describe"""
-        self.poutput(self.server.describe())
+        self.server.describe()
 
     def do_start(self, arg):
         """Start the VoIP server. Usage: start"""
@@ -22,15 +22,15 @@ class VoIPServerCLI(cmd2.Cmd):
         else:
             self.poutput("Starting VoIP server...")
             self.server.start()
+            self.poutput(f"Starting server on {self.host}:{self.port}...")
 
     def do_stop(self, arg):
         """Stop the VoIP server. Usage: stop"""
         if not self.server.running:
             self.poutput("Server is not running.")
             return
-        self.poutput("Stopping VoIP server...")
         self.server.stop()
-        self.poutput("Server stopped.")
+        self.server = server.VoIPServer(self.host, self.port)
 
     def do_status(self, arg):
         """Check if the VoIP server is running."""
