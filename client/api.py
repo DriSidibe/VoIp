@@ -187,7 +187,6 @@ class VoIPClient:
             return
         recipient_username = parts[0]
         message = ' '.join(parts[1:])
-        print(self.username)
         self.message = {
             "code": utils.REQUEST_CODES["SEND_TEXT"],
             "payload": {
