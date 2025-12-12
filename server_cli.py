@@ -52,7 +52,7 @@ class VoIPServerCLI(cmd2.Cmd):
         """List connected clients. Usage: clients"""
         if self.server.available_clients:
             self.poutput("Connected clients:")
-            for client in self.server.available_clients:
+            for _, client in self.server.available_clients.items():
                 self.poutput(f"ID: {client['id']}, Socket: {client['socket']}")
         else:
             self.poutput("No clients connected.")

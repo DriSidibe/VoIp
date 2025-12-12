@@ -101,11 +101,6 @@ class VoIPClient:
             print("You are still connected.")
             print("(VoIPClientCLI) ")
             
-        elif response.get("code") == utils.REQUEST_CODES["SERVER_PING"]:
-            utils.send_message(utils.encode_message({
-                "code": utils.REQUEST_CODES["OK"]
-            }), self.client_socket, self.server_public_key)
-            
         elif response.get("code") == utils.REQUEST_CODES["BAD_REQUEST"]:
             print(f"Failed to connect: {response.get('payload', 'Unknown error')}")
             print("(VoIPClientCLI) ")
@@ -145,6 +140,15 @@ class VoIPClient:
             self.isConnected = False
         except Exception as e:
             print(f"Error in receiver thread: {e}")
+            
+    def send_message(self, message: bytes, _socket: socket.socket, public_key = None):
+        try:
+            utils.send_message(message, _socket, public_key)
+        except Exception as e:
+            self.client_socket.close()
+            self.server_public_key = None
+            self.isConnected = False
+            print("You're not connected. Maybe a problem with the server !")
 
     def disconnect(self):
         self.message = {
@@ -155,7 +159,7 @@ class VoIPClient:
         }
         try:
             if self.isConnected:
-                utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
+                self.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
             else:
                 print(f"You're not connected.")
             self.client_socket.close()
@@ -166,7 +170,6 @@ class VoIPClient:
             self.isConnected = False
             print(f"Error while disconnecting: {e}")
 
-    @utils.connection_required(lambda: client_is_connected) 
     def status(self):
         self.message = {
             "code": utils.REQUEST_CODES["PING"],
@@ -174,7 +177,7 @@ class VoIPClient:
                 "id": self.id
             },
         }
-        utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
+        self.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
 
     @utils.connection_required(lambda: client_is_connected) 
     def friends_list(self):
@@ -182,7 +185,7 @@ class VoIPClient:
             "code": utils.REQUEST_CODES["FRIENDS_LIST"],
             "payload": {'id': self.id},
         }
-        utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
+        self.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
             
     @utils.connection_required(lambda: client_is_connected)        
     def text_friend(self, arg):
@@ -202,7 +205,7 @@ class VoIPClient:
                 "message": message
             }
         }
-        utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
+        self.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
             
     @utils.connection_required(lambda: client_is_connected)         
     def get_messages(self, arg=""):
@@ -234,4 +237,4 @@ class VoIPClient:
                 "from_user": from_user if from_user else ""
             }
         }
-        utils.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
+        self.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)

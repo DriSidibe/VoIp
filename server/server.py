@@ -1,8 +1,8 @@
-import datetime
 import socket
 import logging
 import json
 import threading
+import time
 
 from utils import utils, security as sc
 
@@ -25,7 +25,7 @@ class VoIPServer(socket.socket):
         self.bind((self.host, self.port))
         self.main_listenning_thread = None
         self.clients = []
-        self.available_clients = []
+        self.available_clients = {}
         self.private_key, self.public_key = sc.generate_keys()
         self.private_key = sc.get_private_key(self.private_key)
         self.public_key = sc.get_public_key(self.public_key)
@@ -42,7 +42,9 @@ class VoIPServer(socket.socket):
 
         self.load_clients()
         
-        threading.Thread(target=self.check_clients_status, daemon=True).start()
+        self.available_client_lock = threading.Lock()
+        
+        threading.Thread(target=self.ping_clients, daemon=True).start()
 
     def _listen(self):
         while True:
@@ -76,27 +78,34 @@ class VoIPServer(socket.socket):
         else:
             utils.send_message(utils.encode_message(response), client_socket, interlaucutor.get("public_key", None))
         return -1
+                
+    def ping_client(self, client_id, client_socket, public_key):
+        try:
+            utils.send_message(utils.encode_message({"code": utils.REQUEST_CODES["SERVER_PING"]}), client_socket, public_key)
+        except:
+            with self.available_client_lock:
+                del self.available_clients[client_id]
     
-    def check_clients_status(self):
-        while self.running:
-            print("okokodj")
-            for client in self.available_clients:
-                try:
-                    utils.send_message_and_wait_for_response(utils.encode_message({"code": utils.REQUEST_CODES["SERVER_PING"]}), client['socket'], client.get("public_key", None))
-                    print("ping: " + client.get("username"))
-                except socket.error as e:
-                    self.logger.error(f"Client {client['id']} seems to be disconnected: {e}")
-                    self.available_clients = [c for c in self.available_clients if c['id'] != client['id']]
-            threading.Event().wait(utils.CLIENT_STATUS_PING_TIME)
+    def ping_clients(self):
+        while True:
+            while self.running:
+                for client_id, client in self.available_clients.copy().items():
+                    try:
+                        with self.available_client_lock:
+                            self.available_clients[client_id]["ping_start"] = time.time()
+                        threading.Thread(target=self.ping_client, daemon=True, args=[client_id, client['socket'], client.get("public_key", None),]).start()
+                    except socket.error as e:
+                        self.logger.error(f"Error in ping_clients: {e}")
+                time.sleep(utils.CLIENT_STATUS_PING_TIME)
     
     def is_client_connected(self, username: str):
-        for client in self.available_clients:
+        for client_id, client in self.available_clients.items():
             if client['username'] == username:
                 return True
         return False
     
     def get_friends_list(self, data):
-        friends = [client['username'] for client in self.available_clients if client.get('id') != data['payload'].get('id')]
+        friends = [client['username'] for client_id, client in self.available_clients.items() if client.get('id') != data['payload'].get('id')]
         if not friends:
             friends = []
         return friends
@@ -118,7 +127,7 @@ class VoIPServer(socket.socket):
         sender_username = data['payload'].get('from', 'Unknown')
         recipient_client = None
 
-        for client in self.available_clients:
+        for client_id, client in self.available_clients.items():
             if client['username'] == recipient_username:
                 recipient_client = client
                 break
@@ -169,8 +178,9 @@ class VoIPServer(socket.socket):
                 data = utils.receive_message(client_socket, self.private_key)
                 data = json.loads(data)
                 
-                interlaucutor = [client for client in self.available_clients if client.get('id') == data['payload'].get('id')]
-                interlaucutor = interlaucutor[0] if interlaucutor else {}
+                data["payload"] = data.get("payload", {'id': None})
+                
+                interlaucutor = self.available_clients.get(data['payload'].get('id'), {})
                 
 
                 if(data.get("code") == utils.REQUEST_CODES["CLOSE"]):
@@ -198,6 +208,7 @@ class VoIPServer(socket.socket):
         except Exception as e:
             utils.print_logs_on_terminal(utils.REQUEST_CODES["INTERNAL_ERROR"], "server")
             self.logger.error(f"An error occurred in client listener: {e.__traceback__.tb_lineno} {e}")
+            exit()
 
     def describe(self):
         utils.print_logs_on_terminal(utils.REQUEST_CODES["DESCRIBE"], "server", self)
@@ -209,7 +220,7 @@ class VoIPServer(socket.socket):
         self.clients = utils.get_all_clients_from_json()
 
     def is_client_available(self, id):
-        return any(client['id'] == id for client in self.available_clients)
+        return any(client['id'] == id for client_id, client in self.available_clients.items())
 
     def can_connect(self, id):
         if id in [client['id'] for client in self.clients]:
@@ -219,7 +230,7 @@ class VoIPServer(socket.socket):
     def connect(self, id, client_socket: socket.socket, public_key=None):
         self.logger.info(f"Client {id} is trying to connect.")
         if self.can_connect(id):
-            for client in self.available_clients:
+            for client_id, client in self.available_clients.items():
                 if client['id'] == id:
                     self.logger.info(f"Client {id} is already connected.")
                     return {"code": utils.REQUEST_CODES["OK"], "payload": f"You are already connected."}
@@ -228,7 +239,8 @@ class VoIPServer(socket.socket):
                 username = username[0]
             else:
                 username = "Unknown"
-            self.available_clients.append({"id": id, "username": username, "socket": client_socket, "public_key": public_key})
+            with self.available_client_lock:
+                self.available_clients[id] = {"id": id, "username": username, "socket": client_socket, "public_key": public_key, "ping_start": None, "ping_end": None}
             self.logger.info(f"Client {id} connected.")
             return {"code": utils.REQUEST_CODES["OK_CONNECT"], "payload": username, "public_key": self.public_key.decode('utf-8')}
         else:
@@ -238,7 +250,8 @@ class VoIPServer(socket.socket):
         try:
             self.logger.info(f"Client {id} is trying to disconnect.")
             client_socket.close()
-            self.available_clients = [client for client in self.available_clients if client['id'] != id]
+            with self.available_client_lock:
+                del self.available_clients[id]
             self.logger.info(f"Client {id} disconnected.")
             return {"code": utils.REQUEST_CODES["OK_DISCONNECT"], "payload": f"Client {id} disconnected successfully."}
         except socket.error as e:
@@ -259,12 +272,13 @@ class VoIPServer(socket.socket):
         self.update_state(False)
         utils.print_logs_on_terminal(utils.REQUEST_CODES["SERVER_STOP"], "server")
         self.logger.info("Stopping server...")
-        for client in self.available_clients:
+        for client_id, client in self.available_clients.items():
             try:
                 client['socket'].close()
             except socket.error as e:
                 self.logger.error(f"Error while closing client socket: {e}")
-        self.available_clients = []
+        with self.available_client_lock:
+            self.available_clients = {}
         try:
             self.close()
             self.logger.info("Server stopped.")

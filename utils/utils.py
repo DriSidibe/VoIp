@@ -8,6 +8,8 @@ from . import security
 UNIT_CHUNK_SIZE = 1024
 DELIMITER = b'::END::'
 CLIENT_STATUS_PING_TIME = 10  # in seconds
+CLIENT_STATUS_CHECK_TIME = 10  # in seconds
+CLIENT_STATUS_CHECK_TIMELAPSE = 1000
 
 REQUEST_CODES = {
     "OK": 200,
