@@ -41,6 +41,8 @@ class VoIPServer(socket.socket):
         self.running = False
 
         self.load_clients()
+        
+        threading.Thread(target=self.check_clients_status, daemon=True).start()
 
     def _listen(self):
         while True:
@@ -75,13 +77,37 @@ class VoIPServer(socket.socket):
             utils.send_message(utils.encode_message(response), client_socket, interlaucutor.get("public_key", None))
         return -1
     
-    def get_friends_list(self, client_socket: socket.socket, data, interlaucutor: dict):
+    def check_clients_status(self):
+        while self.running:
+            print("okokodj")
+            for client in self.available_clients:
+                try:
+                    utils.send_message_and_wait_for_response(utils.encode_message({"code": utils.REQUEST_CODES["SERVER_PING"]}), client['socket'], client.get("public_key", None))
+                    print("ping: " + client.get("username"))
+                except socket.error as e:
+                    self.logger.error(f"Client {client['id']} seems to be disconnected: {e}")
+                    self.available_clients = [c for c in self.available_clients if c['id'] != client['id']]
+            threading.Event().wait(utils.CLIENT_STATUS_PING_TIME)
+    
+    def is_client_connected(self, username: str):
+        for client in self.available_clients:
+            if client['username'] == username:
+                return True
+        return False
+    
+    def get_friends_list(self, data):
         friends = [client['username'] for client in self.available_clients if client.get('id') != data['payload'].get('id')]
         if not friends:
             friends = []
+        return friends
+    
+    def get_all_friends(self, client_socket: socket.socket, data, interlaucutor: dict):
+        all_friends = [client['username'] + " ✔" if self.is_client_connected(client['username']) else client['username'] for client in self.clients if client.get('id') != data['payload'].get('id')]
+        if not all_friends:
+            all_friends = []
         message = {
             "code": utils.REQUEST_CODES["FRIENDS_LIST"],
-            "payload": friends,
+            "payload": all_friends,
         }
         utils.send_message(utils.encode_message(message), client_socket, interlaucutor.get("public_key", None))
         
@@ -90,9 +116,18 @@ class VoIPServer(socket.socket):
         message_text = data['payload'].get('message')
         _datetime = data['payload'].get('datetime')
         sender_username = data['payload'].get('from', 'Unknown')
+        recipient_client = None
 
-        recipient_client = [client for client in self.available_clients if client['username'] == recipient_username]
-        recipient_client = recipient_client[0] if recipient_client else None
+        for client in self.available_clients:
+            if client['username'] == recipient_username:
+                recipient_client = client
+                break
+        if not recipient_client:
+            for client in self.clients:
+                if client['username'] == recipient_username:
+                    recipient_client = client
+                    break
+
         ack_message = {}
         if recipient_client:
             message = {
@@ -104,7 +139,9 @@ class VoIPServer(socket.socket):
                 },
             }
             utils.store_message(sender_username, recipient_username, _datetime, message_text)
-            utils.send_message(utils.encode_message(message), recipient_client['socket'], recipient_client.get("public_key", None))
+            
+            if recipient_client.get('socket'):
+                utils.send_message(utils.encode_message(message), recipient_client['socket'], recipient_client.get("public_key", None))
             ack_message = {
                 "code": utils.REQUEST_CODES["OK"],
                 "payload": f"Message sent to {recipient_username}."
@@ -148,7 +185,7 @@ class VoIPServer(socket.socket):
                         break
                         
                 elif(data.get("code") == utils.REQUEST_CODES["FRIENDS_LIST"]):
-                    self.get_friends_list(client_socket, data, interlaucutor)
+                    self.get_all_friends(client_socket, data, interlaucutor)
                     
                 elif(data.get("code") == utils.REQUEST_CODES["SEND_TEXT"]):
                     self.send_text(client_socket, data, interlaucutor)

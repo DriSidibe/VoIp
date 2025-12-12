@@ -1,38 +1,16 @@
 {
-    "papa": [
-        {
-            "to": "ali",
-            "datetime": "2025-12-08T19:42:23.164248Z",
-            "message": "salut ali"
-        },
-        {
-            "from": "papa",
-            "datetime": "2025-12-08T19:44:20.823248Z",
-            "message": "salut papa comment va tu?"
-        }
-    ],
     "ali": [
         {
-            "from": "ali",
-            "datetime": "2025-12-08T19:42:23.164248Z",
-            "message": "salut ali"
-        },
-        {
             "to": "drissa",
-            "datetime": "2025-12-08T19:44:05.884539Z",
-            "message": "salut drissa"
-        },
-        {
-            "to": "papa",
-            "datetime": "2025-12-08T19:44:20.823248Z",
-            "message": "salut papa comment va tu?"
+            "datetime": "2025-12-11T15:08:55.147803Z",
+            "message": "salut"
         }
     ],
     "drissa": [
         {
-            "from": "drissa",
-            "datetime": "2025-12-08T19:44:05.884539Z",
-            "message": "salut drissa"
+            "from": "ali",
+            "datetime": "2025-12-11T15:08:55.147803Z",
+            "message": "salut"
         }
     ]
 }

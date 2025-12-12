@@ -7,6 +7,7 @@ from . import security
 
 UNIT_CHUNK_SIZE = 1024
 DELIMITER = b'::END::'
+CLIENT_STATUS_PING_TIME = 10  # in seconds
 
 REQUEST_CODES = {
     "OK": 200,
@@ -17,7 +18,7 @@ REQUEST_CODES = {
     "INTERNAL_ERROR": 500,
     "CLOSE": 600,
     "PING": 700,
-    "OK_PING": 701,
+    "SERVER_PING": 701,
     "CONNECT": 800,
     "DISCONNECT": 900,
     "FRIENDS_LIST": 1000,

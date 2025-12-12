@@ -101,6 +101,11 @@ class VoIPClient:
             print("You are still connected.")
             print("(VoIPClientCLI) ")
             
+        elif response.get("code") == utils.REQUEST_CODES["SERVER_PING"]:
+            utils.send_message(utils.encode_message({
+                "code": utils.REQUEST_CODES["OK"]
+            }), self.client_socket, self.server_public_key)
+            
         elif response.get("code") == utils.REQUEST_CODES["BAD_REQUEST"]:
             print(f"Failed to connect: {response.get('payload', 'Unknown error')}")
             print("(VoIPClientCLI) ")
