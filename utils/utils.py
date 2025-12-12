@@ -101,7 +101,7 @@ def store_message(sender, recipient, datetime, message):
         })
         recipient_messages = data.get(recipient, [])
         recipient_messages.append({
-            "from": recipient,
+            "from": sender,
             "datetime": datetime,
             "message": message
         })
