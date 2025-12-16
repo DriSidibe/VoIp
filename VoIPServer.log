@@ -1,354 +1,58 @@
-2025-12-05 18:33:18,424 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:33:26,383 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:33:26,384 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:33:55,790 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:33:58,654 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:33:58,654 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:35:00,979 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:35:05,257 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:35:05,257 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:36:30,820 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:36:35,426 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:36:35,426 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:44:52,099 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:45:17,905 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:45:17,906 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:46:09,889 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:46:15,000 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:46:15,000 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:47:51,199 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:47:55,630 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:47:55,630 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:51:41,446 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:51:46,766 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:51:46,766 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:54:32,778 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:54:42,325 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:54:42,325 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:55:42,631 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:55:46,910 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:55:46,910 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:56:22,206 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:56:25,553 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:56:25,553 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:56:55,831 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:57:00,357 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:57:00,358 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:57:55,462 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:58:00,562 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:58:00,562 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 18:58:40,207 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 18:58:48,978 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 18:58:48,978 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-05 19:03:06,713 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-05 19:03:12,596 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-05 19:03:12,596 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 09:57:31,613 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 09:57:36,803 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 09:57:36,804 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 09:58:18,767 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 09:58:33,278 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 09:58:33,279 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 10:00:54,075 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 10:00:59,936 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 10:00:59,936 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 10:02:27,789 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 10:02:35,270 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 10:02:35,270 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 10:04:25,660 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 10:04:30,821 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 10:04:30,822 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 10:14:00,337 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 10:15:06,667 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 10:15:06,672 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 16:04:31,569 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 16:04:38,601 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 16:04:38,601 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 16:10:03,494 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 16:10:09,491 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 16:10:09,491 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 16:23:57,392 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 16:24:05,513 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 16:24:05,514 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 16:29:54,863 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 16:30:00,220 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 16:30:00,220 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 16:46:56,375 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 16:47:04,973 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 16:47:04,973 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 16:49:55,335 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 16:50:00,588 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 16:50:00,588 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 16:52:57,131 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 16:56:01,295 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 16:56:07,339 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 16:56:07,339 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 16:58:49,174 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 16:58:55,191 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 16:58:55,192 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 16:59:43,455 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
-2025-12-06 16:59:43,456 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
-2025-12-06 17:02:11,671 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 17:02:17,527 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 17:02:17,528 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 17:05:32,260 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 17:05:37,509 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 17:05:37,510 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 17:05:49,834 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
-2025-12-06 17:05:49,834 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
-2025-12-06 17:11:02,573 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to disconnect.
-2025-12-06 17:11:02,574 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 disconnected.
-2025-12-06 17:11:02,574 - ERROR - An error occurred in client listener: 148 [Errno 9] Bad file descriptor
-2025-12-06 17:11:28,089 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
-2025-12-06 17:11:28,089 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
-2025-12-06 17:11:28,090 - ERROR - An error occurred in client listener: 148 [Errno 9] Bad file descriptor
-2025-12-06 17:11:56,369 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 17:12:36,111 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 17:40:53,552 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 17:47:42,107 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 17:49:33,275 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 17:49:45,736 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 17:49:45,736 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 17:50:16,837 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
-2025-12-06 17:50:16,838 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
-2025-12-06 17:50:16,839 - ERROR - An error occurred in client listener: 146 [Errno 9] Bad file descriptor
-2025-12-06 17:51:39,537 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 17:51:39,537 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 17:51:44,526 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
-2025-12-06 17:51:44,527 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
-2025-12-06 17:51:44,528 - ERROR - An error occurred in client listener: 146 [Errno 9] Bad file descriptor
-2025-12-06 17:52:10,737 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 17:52:10,737 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 17:52:15,603 - INFO - Stopping server...
-2025-12-06 17:52:15,603 - INFO - Server stopped.
-2025-12-06 17:55:22,134 - ERROR - An error occurred in client listener: 132 [Errno 9] Bad file descriptor
-2025-12-06 17:55:26,751 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 17:55:33,221 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 17:55:33,221 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 17:55:36,469 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
-2025-12-06 17:55:36,469 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
-2025-12-06 17:55:36,469 - ERROR - An error occurred in client listener: 146 [Errno 9] Bad file descriptor
-2025-12-06 17:59:02,194 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 17:59:08,161 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 17:59:08,161 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 17:59:11,844 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
-2025-12-06 17:59:11,845 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
-2025-12-06 18:04:03,726 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-06 18:04:15,006 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 18:04:15,006 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 18:04:19,630 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
-2025-12-06 18:04:19,635 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
-2025-12-06 18:04:35,528 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-06 18:04:35,528 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-06 18:04:38,446 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to disconnect.
-2025-12-06 18:04:38,446 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f disconnected.
-2025-12-08 19:41:14,869 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-08 19:41:24,792 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-08 19:41:24,793 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-08 19:41:37,704 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
-2025-12-08 19:41:37,704 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
-2025-12-08 19:42:11,881 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-08 19:42:11,881 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-08 20:00:02,811 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-08 20:00:07,514 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-08 20:00:07,514 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-08 20:16:29,421 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-08 20:16:34,628 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-08 20:16:34,628 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-08 20:19:09,270 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-08 20:19:14,045 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-08 20:19:14,045 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-08 20:19:27,769 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
-2025-12-08 20:19:27,770 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
-2025-12-08 20:28:53,691 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-08 20:28:59,657 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-08 20:28:59,657 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-08 20:29:20,976 - ERROR - An error occurred in client listener: 167 'socket'
-2025-12-08 20:36:02,689 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-08 20:36:06,492 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-08 20:36:06,492 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-08 20:40:25,108 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-08 20:40:28,854 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-08 20:40:28,855 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-08 20:58:23,627 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-08 20:58:33,302 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
-2025-12-08 20:58:33,302 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
-2025-12-11 15:06:04,376 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-11 15:06:12,917 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-11 15:06:12,917 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-11 15:08:35,679 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-11 15:08:40,708 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-11 15:08:40,708 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-11 15:11:45,530 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-11 15:11:51,617 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-11 15:11:51,617 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-11 15:16:36,586 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to disconnect.
-2025-12-11 15:16:36,586 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd disconnected.
-2025-12-11 15:16:39,510 - INFO - Stopping server...
-2025-12-11 15:16:39,510 - INFO - Server stopped.
-2025-12-11 15:30:16,321 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-11 15:30:24,447 - INFO - Stopping server...
-2025-12-11 15:30:24,447 - INFO - Server stopped.
-2025-12-11 15:30:57,923 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-11 15:31:14,714 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-11 15:31:34,529 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-11 15:35:56,587 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 14:53:22,574 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 14:54:06,731 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 14:54:14,292 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 14:54:20,134 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 14:54:20,139 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 14:54:20,140 - ERROR - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd seems to be disconnected: [Errno 104] Connection reset by peer
-2025-12-12 14:54:31,269 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 14:54:31,275 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 14:54:52,543 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 14:54:52,543 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is already connected.
-2025-12-12 14:56:44,231 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 14:56:54,306 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 14:56:54,306 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 15:02:37,072 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 15:02:41,947 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 15:02:41,948 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 15:13:08,420 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 15:13:14,266 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 15:13:14,267 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 15:13:23,294 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to disconnect.
-2025-12-12 15:13:23,294 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd disconnected.
-2025-12-12 15:20:25,138 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 15:20:42,903 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 15:20:42,903 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 15:28:45,768 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 15:28:53,324 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 15:28:53,324 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 15:31:13,244 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 15:31:18,942 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 15:31:18,948 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 15:31:58,927 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 15:32:28,248 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 15:32:28,254 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 15:35:14,716 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 15:35:21,008 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 15:35:21,014 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 15:36:34,108 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 15:36:39,481 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 15:36:39,487 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 15:36:39,488 - ERROR - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd seems to be disconnected: [Errno 104] Connection reset by peer
-2025-12-12 15:41:33,767 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 15:41:41,706 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 15:41:41,707 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 15:41:41,815 - ERROR - An error occurred in client listener: 172 'payload'
-2025-12-12 16:52:36,398 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 16:52:41,411 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 16:52:41,411 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 16:52:41,468 - ERROR - An error occurred in client listener: 182 0
-2025-12-12 16:53:27,132 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 16:53:31,962 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 16:53:31,963 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 16:53:32,008 - ERROR - An error occurred in client listener: 182 0
-2025-12-12 16:54:06,031 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 16:54:10,891 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 16:54:10,891 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 16:54:10,941 - ERROR - An error occurred in client listener: 182 0
-2025-12-12 16:55:26,320 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 16:55:31,360 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 16:55:31,360 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 16:55:31,422 - ERROR - An error occurred in client listener: 184 0
-2025-12-12 16:57:23,059 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 16:57:28,268 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 16:57:28,268 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 16:57:28,316 - ERROR - An error occurred in client listener: 185 0
-2025-12-12 16:58:17,811 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 16:58:23,837 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 16:58:23,837 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 16:58:23,882 - ERROR - An error occurred in client listener: 183 0
-2025-12-12 17:02:38,876 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:02:49,713 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:02:49,713 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:02:49,761 - ERROR - An error occurred in client listener: 182 0
-2025-12-12 17:05:04,212 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:05:08,862 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:05:08,862 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:05:44,979 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
-2025-12-12 17:08:53,709 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:08:59,150 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:08:59,151 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:09:04,651 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
-2025-12-12 17:09:04,651 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
-2025-12-12 17:10:08,079 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to disconnect.
-2025-12-12 17:10:08,079 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd disconnected.
-2025-12-12 17:12:33,860 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:12:37,808 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:12:37,808 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:12:40,930 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to disconnect.
-2025-12-12 17:12:40,930 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd disconnected.
-2025-12-12 17:12:49,213 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:12:49,213 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:12:55,481 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to disconnect.
-2025-12-12 17:12:55,481 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd disconnected.
-2025-12-12 17:13:03,680 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:13:03,680 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:13:05,708 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to disconnect.
-2025-12-12 17:13:05,708 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd disconnected.
-2025-12-12 17:13:10,709 - INFO - Stopping server...
-2025-12-12 17:13:10,709 - INFO - Server stopped.
-2025-12-12 17:40:35,977 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:40:55,891 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:41:00,324 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:41:00,324 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:43:14,811 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:43:19,617 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:43:19,617 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:44:52,463 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:45:07,384 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:45:07,385 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:45:54,524 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:45:59,075 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:45:59,075 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:46:17,340 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to disconnect.
-2025-12-12 17:46:17,340 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd disconnected.
-2025-12-12 17:46:34,121 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:46:34,121 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:50:17,607 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:50:21,099 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:50:21,099 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:55:33,556 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:55:39,483 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:55:39,484 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 17:56:59,910 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 17:57:04,358 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 17:57:04,358 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 18:05:14,585 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 18:05:19,250 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 18:05:19,250 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 19:46:56,878 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 19:47:01,380 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 19:47:01,380 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 19:47:47,548 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 19:47:55,189 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 19:47:55,190 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 19:50:04,817 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 19:50:11,440 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 19:50:11,441 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 19:52:21,490 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 19:52:37,130 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 19:52:37,130 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 19:52:51,980 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
-2025-12-12 19:52:51,981 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
-2025-12-12 19:53:49,244 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
-2025-12-12 19:53:49,244 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
-2025-12-12 20:05:55,716 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 20:07:45,380 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 20:07:49,697 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 20:07:49,698 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 20:09:13,424 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 20:09:18,556 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 20:09:18,556 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 20:09:40,566 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 20:09:45,119 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 20:09:45,119 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 20:10:54,723 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 20:10:59,236 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 20:10:59,236 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
-2025-12-12 20:12:32,135 - INFO - Server listening on 127.0.0.1:8080...
-2025-12-12 20:12:38,242 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd is trying to connect.
-2025-12-12 20:12:38,242 - INFO - Client s6kh9292-9e08-40cb-989c-18d8d81a24sd connected.
+2025-12-16 20:41:34,054 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-16 20:41:41,002 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:41:41,002 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:42:09,261 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:42:09,261 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is already connected.
+2025-12-16 20:42:17,439 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:42:17,440 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:42:57,898 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:42:57,899 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is already connected.
+2025-12-16 20:43:01,649 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:43:01,649 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is already connected.
+2025-12-16 20:43:19,101 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:43:19,102 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:43:27,635 - ERROR - An error occurred in client listener: 230 'who'
+2025-12-16 20:44:00,455 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-16 20:44:06,615 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:44:06,615 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:44:12,877 - ERROR - An error occurred in client listener: 231 'who'
+2025-12-16 20:44:38,284 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-16 20:44:42,107 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:44:42,107 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:44:54,096 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-16 20:44:54,101 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-16 20:47:38,120 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-16 20:47:44,318 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:47:44,318 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:48:12,027 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-16 20:48:12,032 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-16 20:50:43,240 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-16 20:50:47,393 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:50:47,393 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:50:57,255 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-16 20:50:57,260 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-16 20:51:19,663 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-16 20:51:24,452 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:51:24,453 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:51:36,384 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-16 20:51:36,390 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-16 20:55:24,799 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-16 20:55:30,546 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:55:30,546 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:55:34,817 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-16 20:55:34,817 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-16 20:58:01,226 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-16 20:58:05,435 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:58:05,435 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:58:10,103 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-16 20:58:10,103 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-16 20:58:55,522 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-16 20:59:00,624 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 20:59:00,624 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 20:59:04,650 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-16 20:59:04,650 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.
+2025-12-16 21:05:35,008 - INFO - Server listening on 127.0.0.1:8080...
+2025-12-16 21:05:39,701 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f is trying to connect.
+2025-12-16 21:05:39,701 - INFO - Client 185bd454-6d73-4990-b75b-d4aa87a95e4f connected.
+2025-12-16 21:05:43,315 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 is trying to connect.
+2025-12-16 21:05:43,315 - INFO - Client c9a2d292-9e08-40cb-989c-18d8d81a2422 connected.

@@ -32,7 +32,7 @@ class VoIPClientCLI(cmd2.Cmd):
         
     def do_voice_call(self, arg):
         """Voice call with other friends. Usage: voice_call <recipient_username>"""
-        self.client.text_friend(arg)
+        self.client.voice_call(arg)
     
     def do_get_messages(self, arg):
         """Get messages from someone. Usage: get_messages <from_date | None> <to_date | None> <from_user | None>"""

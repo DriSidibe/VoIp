@@ -62,21 +62,21 @@ class VoIPServer(socket.socket):
     def close_server(self, client_socket: socket.socket):
         pass
     
-    def ping(self, client_socket: socket.socket, interlaucutor: dict):
-        utils.send_message(utils.encode_message({"code": utils.REQUEST_CODES["PING"]}), client_socket, interlaucutor.get("public_key", None))
+    def ping(self, client_socket: socket.socket, interlocutor: dict):
+        utils.send_message(utils.encode_message({"code": utils.REQUEST_CODES["PING"]}), client_socket, interlocutor.get("public_key", None))
         
-    def disconnect_client(self, client_socket: socket.socket, data, interlaucutor: dict):
+    def disconnect_client(self, client_socket: socket.socket, data, interlocutor: dict):
         message = {
             "code": utils.REQUEST_CODES["OK"],
             "payload": f"Client {data['payload']['id']} disconnected."
         }
-        utils.send_message(utils.encode_message(message), client_socket, interlaucutor.get("public_key", None))
+        utils.send_message(utils.encode_message(message), client_socket, interlocutor.get("public_key", None))
         utils.print_logs_on_terminal(utils.REQUEST_CODES["DISCONNECT"], "server", data['payload']['id'])
         response = self.disconnect(data['payload']['id'], client_socket)
         if(response.get("code") == utils.REQUEST_CODES["OK"]):
             return 1
         else:
-            utils.send_message(utils.encode_message(response), client_socket, interlaucutor.get("public_key", None))
+            utils.send_message(utils.encode_message(response), client_socket, interlocutor.get("public_key", None))
         return -1
                 
     def ping_client(self, client_id, client_socket, public_key):
@@ -91,8 +91,6 @@ class VoIPServer(socket.socket):
             while self.running:
                 for client_id, client in self.available_clients.copy().items():
                     try:
-                        with self.available_client_lock:
-                            self.available_clients[client_id]["ping_start"] = time.time()
                         threading.Thread(target=self.ping_client, daemon=True, args=[client_id, client['socket'], client.get("public_key", None),]).start()
                     except socket.error as e:
                         self.logger.error(f"Error in ping_clients: {e}")
@@ -110,7 +108,7 @@ class VoIPServer(socket.socket):
             friends = []
         return friends
     
-    def get_all_friends(self, client_socket: socket.socket, data, interlaucutor: dict):
+    def get_all_friends(self, client_socket: socket.socket, data, interlocutor: dict):
         all_friends = [client['username'] + " ✔" if self.is_client_connected(client['username']) else client['username'] for client in self.clients if client.get('id') != data['payload'].get('id')]
         if not all_friends:
             all_friends = []
@@ -118,9 +116,9 @@ class VoIPServer(socket.socket):
             "code": utils.REQUEST_CODES["FRIENDS_LIST"],
             "payload": all_friends,
         }
-        utils.send_message(utils.encode_message(message), client_socket, interlaucutor.get("public_key", None))
+        utils.send_message(utils.encode_message(message), client_socket, interlocutor.get("public_key", None))
         
-    def send_text(self, client_socket: socket.socket, data, interlaucutor: dict):
+    def send_text(self, client_socket: socket.socket, data, interlocutor: dict):
         recipient_username = data['payload'].get('to')
         message_text = data['payload'].get('message')
         _datetime = data['payload'].get('datetime')
@@ -160,17 +158,42 @@ class VoIPServer(socket.socket):
                 "code": utils.REQUEST_CODES["NOT_FOUND"],
                 "payload": f"Recipient {recipient_username} not found."
             }
-        utils.send_message(utils.encode_message(ack_message), client_socket, interlaucutor.get("public_key", None))
+        utils.send_message(utils.encode_message(ack_message), client_socket, interlocutor.get("public_key", None))
         
-    def get_messages(self, client_socket: socket.socket, data, interlaucutor: dict):
-        messages = utils.get_messages(interlaucutor, data.get("from_date"), data.get("to_date"), data.get("from_user"))
+    def get_messages(self, client_socket: socket.socket, data, interlocutor: dict):
+        messages = utils.get_messages(interlocutor, data.get("from_date"), data.get("to_date"), data.get("from_user"))
         message = {
                 "code": utils.REQUEST_CODES["MESSAGES_RETRIEVE"],
                 "payload": {
                     "messages": messages
                 }
             }
-        utils.send_message(utils.encode_message(message), client_socket, interlaucutor.get("public_key", None))
+        utils.send_message(utils.encode_message(message), client_socket, interlocutor.get("public_key", None))
+
+    def notify_call_client(self, client, interlocutor: None):
+        message = {
+            "code": utils.REQUEST_CODES["VOICECALL_REQUEST"],
+            "payload": {
+                "who": interlocutor["username"]
+            }
+        }
+        while True:
+            if client["id"] in self.available_clients:
+                client = self.available_clients[client["id"]]
+                client_socket = client["socket"]
+                utils.send_message(utils.encode_message(message), client_socket, client.get("public_key", None))
+                time.sleep(utils.CALL_NOTIFICATION_DELAY)
+
+    def voice_call(self, client_socket, data, interlocutor: None):
+        client = utils.get_client_by_username(self.clients, data["payload"]["who"])
+        if not client:
+            message = {
+                "code": utils.REQUEST_CODES["NOT_FOUND"],
+                "payload": f"Recipient {recipient_username} not found."
+            }
+            utils.send_message(utils.encode_message(message), client_socket, interlocutor.get("public_key", None))
+            return
+        threading.Thread(target=self.notify_call_client, args=[client, interlocutor]).start()
 
     def _listen_client(self, client_socket: socket.socket):
         try:
@@ -180,28 +203,31 @@ class VoIPServer(socket.socket):
                 
                 data["payload"] = data.get("payload", {'id': None})
                 
-                interlaucutor = self.available_clients.get(data['payload'].get('id'), {})
+                interlocutor = self.available_clients.get(data['payload'].get('id'), {})
                 
 
                 if(data.get("code") == utils.REQUEST_CODES["CLOSE"]):
                     self.close_server(client_socket)
                 
                 elif(data.get("code") == utils.REQUEST_CODES["PING"]):
-                    self.ping(client_socket, interlaucutor)
+                    self.ping(client_socket, interlocutor)
                     
                 elif(data.get("code") == utils.REQUEST_CODES["DISCONNECT"]):
-                    res = self.disconnect_client(client_socket, data, interlaucutor)
+                    res = self.disconnect_client(client_socket, data, interlocutor)
                     if res == 1:
                         break
                         
                 elif(data.get("code") == utils.REQUEST_CODES["FRIENDS_LIST"]):
-                    self.get_all_friends(client_socket, data, interlaucutor)
+                    self.get_all_friends(client_socket, data, interlocutor)
                     
                 elif(data.get("code") == utils.REQUEST_CODES["SEND_TEXT"]):
-                    self.send_text(client_socket, data, interlaucutor)
+                    self.send_text(client_socket, data, interlocutor)
                     
                 elif(data.get("code") == utils.REQUEST_CODES["MESSAGES_RETRIEVE"]):
-                    self.get_messages(client_socket, data['payload'], interlaucutor)
+                    self.get_messages(client_socket, data['payload'], interlocutor)
+
+                elif(data.get("code") == utils.REQUEST_CODES["VOICECALL_REQUEST"]):
+                    self.voice_call(client_socket, data, interlocutor)
                     
         except socket.error as e:
             pass
@@ -240,7 +266,7 @@ class VoIPServer(socket.socket):
             else:
                 username = "Unknown"
             with self.available_client_lock:
-                self.available_clients[id] = {"id": id, "username": username, "socket": client_socket, "public_key": public_key, "ping_start": None, "ping_end": None}
+                self.available_clients[id] = {"id": id, "username": username, "socket": client_socket, "public_key": public_key}
             self.logger.info(f"Client {id} connected.")
             return {"code": utils.REQUEST_CODES["OK_CONNECT"], "payload": username, "public_key": self.public_key.decode('utf-8')}
         else:

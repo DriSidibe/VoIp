@@ -10,6 +10,9 @@ DELIMITER = b'::END::'
 CLIENT_STATUS_PING_TIME = 10  # in seconds
 CLIENT_STATUS_CHECK_TIME = 10  # in seconds
 CLIENT_STATUS_CHECK_TIMELAPSE = 1000
+CALL_NOTIFICATION_DELAY = 2
+
+RINGTONE = "ringtone.wav"
 
 REQUEST_CODES = {
     "OK": 200,
@@ -29,8 +32,11 @@ REQUEST_CODES = {
     "MESSAGES_RETRIEVE": 1300,
     "DESCRIBE": 1400,
     "SERVER_START": 1500,
-    "SERVER_STOP": 1600
+    "SERVER_STOP": 1600,
+    "VOICECALL_REQUEST": 1700
 }
+
+isRinging = False
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -66,6 +72,20 @@ def get_client_by_username(clients, username):
         if client['username'] == username:
             return client
     return None
+
+def ring(username):
+    global isRinging
+    import pygame
+
+    pygame.mixer.init()
+    pygame.mixer.music.load(RINGTONE)
+
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        pass
+    print(" ## RINGING ## {username} is calling you !")
+    isRinging = False
+
 
 def update_client(client):
     clients = get_all_clients_from_json()

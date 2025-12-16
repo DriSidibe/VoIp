@@ -130,6 +130,12 @@ class VoIPClient:
             
         elif code == utils.REQUEST_CODES["FRIENDS_LIST"]:
             utils.print_friends(payload)
+
+        elif code == utils.REQUEST_CODES["VOICECALL_REQUEST"]:
+            who = payload.get("who")
+            if not utils.isRinging:
+                threading.Thread(target=utils.ring, args=[who]).start()
+                utils.isRinging = True
             
     def receive_message_in_external_thread(self, _socket: socket.socket, private_key = None):
         try:
@@ -149,6 +155,22 @@ class VoIPClient:
             self.server_public_key = None
             self.isConnected = False
             print("You're not connected. Maybe a problem with the server !")
+
+    @utils.connection_required(lambda: client_is_connected)
+    def voice_call(self, arg):
+        parts = arg.split(' ')
+        if len(parts) < 1:
+            print("Usage: voice_call <recipient_username>")
+            return
+        recipient_username = parts[0]
+        self.message = {
+            "code": utils.REQUEST_CODES["VOICECALL_REQUEST"],
+            "payload": {
+                "id": self.id,
+                "who": recipient_username
+            },
+        }
+        self.send_message(utils.encode_message(self.message), self.client_socket, self.server_public_key)
 
     def disconnect(self):
         self.message = {
