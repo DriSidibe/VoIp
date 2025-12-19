@@ -1,3 +1,4 @@
+import sys
 import cmd2
 from server import server
 from utils.utils import get_all_settings_from_json
@@ -75,6 +76,8 @@ class VoIPServerCLI(cmd2.Cmd):
 
 if __name__ == '__main__':
     settings = get_all_settings_from_json()
+    sys.stdout.reconfigure(line_buffering=True)
+
     try:
         port = settings['server']['port']
         host = settings['server']['host']
