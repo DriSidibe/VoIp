@@ -30,7 +30,6 @@ class VoIPServerCLI(cmd2.Cmd):
             self.poutput("Server is not running.")
             return
         self.server.stop()
-        self.server = server.VoIPServer(self.host, self.port)
 
     def do_status(self, arg):
         """Check if the VoIP server is running."""
